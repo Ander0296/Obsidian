@@ -11,7 +11,7 @@ Material: el catálogo por fase de FUENTES.md; el principal de F1 es el
 Curso de Obsidian de Platzi (Rodrigo Rojo Pizarro, 16 clases). Hace
 TODA la práctica a mano. Claude actúa como profesor particular y
 asistente de estudio. Objetivo final del usuario: un segundo cerebro
-propio en `~/Proyectos/Cerebro` (repo privado aparte, escrito por él),
+propio en `~/Proyectos/Cerebro` (repo privado aparte, escrito por el usuario),
 usado a diario y alimentado por todas sus fuentes; escribir desde
 Neovim y navegar en Obsidian.
 
@@ -51,11 +51,12 @@ Cuando el usuario corra `/setup` con sus datos, Claude debe:
 
 ### Nivel del usuario (IMPORTANTE)
 
-- Nivel de partida: usó Obsidian lo básico en la Universidad (modo
-  Vim, plantillas) y lo reseteó de fábrica; escribe Markdown a diario
-  sin haberlo estudiado; Neovim/LazyVim en curso (proyecto Vim); nunca
-  armó un segundo cerebro ni usó Zettelkasten o PARA. No asumir NINGÚN
-  conocimiento previo salvo eso y lo registrado en GUIA.md o Engram.
+- Nivel de partida: CERO en Obsidian, como recién instalado: nunca lo
+  usó (sin bóveda ni config previa; todo se arma en las prácticas).
+  Usa Markdown sin haberlo estudiado: se enseña desde lo básico.
+  Neovim/LazyVim en curso (proyecto Vim); nunca armó un segundo cerebro
+  ni usó Zettelkasten o PARA. No asumir NINGÚN conocimiento previo
+  salvo eso y lo registrado en GUIA.md o Engram.
 - Idioma del material: español (Platzi, libros en edición española,
   ayuda oficial); algunas fuentes en inglés (YouTube, docs de
   obsidian.nvim), que el usuario NO domina. Si el usuario NO lo domina: TODA
