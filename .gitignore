@@ -1,0 +1,17 @@
+# Material de estudio: pantallazos Y texto copiado en .md
+# (copyright — NUNCA subir, el repo puede ser público). Ignora la
+# carpeta completa, así que cubre cualquier formato que se deje adentro.
+material/
+
+# Archivos locales de herramientas
+.codegraph/
+.claude/settings.local.json
+.atl/
+
+# Compilados/temporales típicos (Claude agrega los del tema en el MENSAJE 0)
+*.class
+__pycache__/
+
+# Basura del sistema
+.DS_Store
+Thumbs.db
