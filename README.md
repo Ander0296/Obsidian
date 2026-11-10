@@ -1,4 +1,15 @@
-# PLANTILLA PROFESOR — aprender {{TEMA}} con Claude Code
+# Obsidian — mi segundo cerebro, aprendido con Claude Code
+
+Curso para armar un segundo cerebro propio con Obsidian: bóveda,
+enlaces, propiedades, plantillas, nota diaria, Bases y Canvas, con el
+modo Vim y desde Neovim (obsidian.nvim); Zettelkasten, PARA y mapas de
+contenido; Markdown bien escrito. El material de cada fase está en
+`FUENTES.md`.
+
+**El curso y la bóveda van separados**, como el proyecto Vim y
+`~/.config/nvim`: este repo (público) registra lo que aprendo; mi
+cerebro vive en `~/Proyectos/Cerebro`, con su propio repo privado,
+y lo escribo todo yo.
 
 Sistema de estudio con Claude Code como profesor particular: yo le paso
 el material por tandas (texto de un libro, pantallazos, docs...), él lo
@@ -20,12 +31,21 @@ profe me dice cuál sigue. Tampoco escribo comandos de git: los hace él.
 ## El mapa en 30 segundos
 
 ```
-{{NOMBRE-CARPETA}}/
+~/Proyectos/
+├── Cerebro/         MI BÓVEDA (repo privado aparte). Acá hago las
+│                    prácticas cNN; Claude solo la LEE para corregir
+└── Obsidian/        este repo: el curso
+    (sigue abajo)
+
+Obsidian/
 ├── material/        acá dejo la tanda de hoy (NO va a git: copyright)
 │   └── visto/       lo ya explicado — lo archiva Claude solo
-├── ejercicios/      mis prácticas. Claude deja el ENUNCIADO + el
-│   │                prompt de entrega; la solución la escribo yo
+├── ejercicios/      los ENUNCIADOS + prompt de entrega (cNN, mdNN,
+│   │                qNN). Las cNN se resuelven en Cerebro; las otras,
+│   │                en el mismo archivo. La solución la escribo yo
 │   └── repasos/     los repasos, siempre desde cero
+├── FUENTES.md     ★ de dónde aprendo: catálogo por fase, con lo que
+│                    ya vi marcado [x] (lo marco yo)
 ├── ToDo/            checklists: qué verificar antes de dar algo por
 │                    terminado (los mantiene Claude)
 ├── GUIA.md        ★ lo que ENTENDÍ, sesión a sesión
@@ -39,7 +59,8 @@ profe me dice cuál sigue. Tampoco escribo comandos de git: los hace él.
 ├── ANKI.txt         tarjetas de repaso 80/20 para importar en Anki
 ├── CLAUDE.md        las reglas del profe
 └── .claude/          los comandos (commands/) y los dos automatismos
-                      (hooks/): pull al abrir, y el candado
+                      (hooks/): pull al abrir, y el candado (que
+                      además no le deja tocar NADA de Cerebro)
 ```
 
 **Los dos automatismos que corren solos:**
@@ -61,7 +82,7 @@ Da igual si vengo a estudiar material nuevo, a entregar una práctica o
 a hacer un repaso. **Siempre es lo mismo:**
 
 ```
-[TERMINAL]  cd ~/Proyectos/{{NOMBRE-CARPETA}}
+[TERMINAL]  cd ~/Proyectos/Obsidian
 [TERMINAL]  armo la tanda en material/  (ver "Cómo armar una tanda")
 [TERMINAL]  claude
 [CLAUDE]    /arranque
@@ -73,7 +94,7 @@ líneas qué toca hoy. Termina siempre con un bloque así:
 
 ```
 ▶ SIGUE: explicar las páginas 70-78 (tanda de texto, 8 páginas)
-  1. /rename java-s08     ← el nombre de ESTA sesión
+  1. /rename obs-s08      ← el nombre de ESTA sesión
   2. /tanda
 ```
 
@@ -108,7 +129,7 @@ Los prompts completos viven en `.claude/commands/`.
 | `/setup` | configura el proyecto | una sola vez |
 
 Todos aceptan contexto extra: `/tanda son 4 pantallazos del capítulo 5`,
-`/entrega la práctica 3 está en ejercicios/p03.java, compila y corre bien`.
+`/entrega c03: toqué Inbox/idea.md y MOCs/Lectura.md, los enlaces resuelven`.
 
 El prompt de `/entrega` ya relleno está **al final de cada archivo de
 arranque**: lo copio de ahí, es más rápido.
@@ -132,6 +153,11 @@ misma página en texto, y encima Claude lo lee con menos precisión.
 | TEXTO denso o con mucho código | 5-8 páginas  | 2                 |
 | IMÁGENES (pantallazos)         | 3-5 imágenes | 1                 |
 | MIXTA (aunque sea 1 imagen)    | como imágenes| 1                 |
+
+En ESTE proyecto: los videos los pasa a texto mi transcriptor
+(`CTRL+SUPER+ALT+P` → `Obsidian` → `CTRL+SUPER+ALT+R`) y caen solos en
+`material/`; `CTRL+SUPER+ALT+D` marca ⚠️ donde me pierdo y ahí el profe
+frena. Una tanda = 2-4 clases de Platzi. Libros y docs: ver `FUENTES.md`.
 
 Cómo paso una tanda de TEXTO (lo más barato y lo preferido):
 - Copio el texto del libro/curso y lo pego en un archivo nuevo:
@@ -167,7 +193,7 @@ me lo dice el profe (ver "quién decide qué", más abajo).
 ### PASO 1 — preparo el material `[TERMINAL]`
 
 ```
-cd ~/Proyectos/{{NOMBRE-CARPETA}}
+cd ~/Proyectos/Obsidian
 ```
 
 Y dejo la tanda en `material/`: el texto copiado en un `.md`, o los
@@ -194,7 +220,7 @@ vencieron y qué toca hoy. Y termina con un bloque así:
 
 ```
 ▶ SIGUE: explicar las páginas 70-78 (tanda de texto, 8 páginas)
-  1. /rename {{PREFIJO}}-s08
+  1. /rename obs-s08
   2. /tanda
 ```
 
@@ -216,7 +242,7 @@ Si terminé una práctica, va **antes** que el material nuevo: el prompt ya
 relleno está al final del archivo de arranque, lo copio de ahí.
 
 ```
-/entrega la práctica 3 está en ejercicios/p03, la probé y funciona
+/entrega c03: toqué Inbox/idea.md, la verifiqué en Obsidian y aparece en enlaces entrantes
 ```
 
 Si toca un repaso vencido, `/repaso`. Si el profe me propuso examen,
@@ -297,7 +323,7 @@ ahí el que rinde mal es el contexto, no yo.
 # SI SE CERRÓ LA TERMINAL SIN QUERER (mismo día)
 # ============================================================
 
-`[TERMINAL]` `claude --resume {{PREFIJO}}-sNN`
+`[TERMINAL]` `claude --resume obs-sNN`
 Solo para retomar el MISMO día. Día nuevo = sesión nueva.
 
 # ============================================================

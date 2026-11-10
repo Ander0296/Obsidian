@@ -15,23 +15,30 @@ set -u
 
 # Carpetas donde vive el trabajo del usuario. El /setup agrega acá las que
 # sume el tema (diagramas/, grabaciones/, redacciones/...).
-CARPETAS_PROTEGIDAS='/(ejercicios)/'
+CARPETAS_PROTEGIDAS='/(ejercicios|Proyectos/Cerebro)/'
+
+# Carpetas donde Claude no puede ni CREAR: la bóveda Cerebro es 100% del
+# usuario y los archivos de arranque viven en ejercicios/ de este repo.
+CARPETAS_SOLO_LECTURA='/Proyectos/Cerebro/'
 
 entrada=$(cat)
 herramienta=$(printf '%s' "$entrada" | jq -r '.tool_name // empty')
-archivo=$(printf '%s' "$entrada" | jq -r '.tool_input.file_path // empty')
+archivo=$(printf '%s' "$entrada" | jq -r '.tool_input.file_path // .tool_input.notebook_path // empty')
 
 [ -z "$archivo" ] && exit 0
 printf '%s' "$archivo" | grep -qE "$CARPETAS_PROTEGIDAS" || exit 0
 
-# Crear un archivo de arranque nuevo sí está permitido.
-if [ "$herramienta" = "Write" ] && [ ! -e "$archivo" ]; then
+# Crear un archivo de arranque nuevo sí está permitido (salvo en las
+# carpetas de solo lectura).
+if [ "$herramienta" = "Write" ] && [ ! -e "$archivo" ] &&
+   ! printf '%s' "$archivo" | grep -qE "$CARPETAS_SOLO_LECTURA"; then
   exit 0
 fi
 
 motivo="BLOQUEADO por el candado del proyecto: ese archivo es trabajo del usuario.
 Claude solo puede CREAR archivos nuevos en las carpetas de trabajo
 (el archivo de arranque: enunciado + prompt de entrega, sin solución).
+En ~/Proyectos/Cerebro ni eso: la bóveda es 100% del usuario.
 Editar o sobrescribir lo que el usuario ya escribió está prohibido: la
 corrección va AL CHAT y, en 3 líneas como máximo, a EJERCICIOS.md."
 

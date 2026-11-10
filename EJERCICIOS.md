@@ -1,4 +1,4 @@
-# EJERCICIOS — {{TEMA}}
+# EJERCICIOS — Obsidian como segundo cerebro
 
 Este archivo guarda SOLO lo VIVO (se lee entero al inicio de cada
 sesión, así que se mantiene corto a propósito):
@@ -21,8 +21,12 @@ Corrección escrita en archivo: MÁXIMO 3 líneas. El detalle va al chat.
 
 FORMATOS (referencia para Claude — copiar y llenar):
 
-PRÁCTICA #NN — [tema] — [ ] pendiente
-Tipo: (según los tipos definidos en el setup)
+TIPOS (cada uno con su numeración): cNN = nota en Cerebro (se resuelve
+en ~/Proyectos/Cerebro) · mdNN = Markdown (en el mismo archivo) ·
+qNN = método/concepto (en el mismo archivo).
+
+PRÁCTICA cNN|mdNN|qNN — [tema] — [ ] pendiente
+Tipo: nota en Cerebro / Markdown / método-concepto
 Arranque: ejercicios/... | Si te trabás: Sesión #Y de GUIA.md
 
 MATERIAL — [nombre] — [tema] (punto del material, Sesión #Y) — [ ] pendiente

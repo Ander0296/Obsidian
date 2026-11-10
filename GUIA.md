@@ -1,4 +1,4 @@
-# GUÍA: {{TEMA}} — {{MATERIAL PRINCIPAL}}
+# GUÍA: Obsidian como segundo cerebro — fuentes de FUENTES.md (F1: Curso de Obsidian de Platzi)
 
 No asume conocimiento previo — la mantiene Claude Code sesión a
 sesión. Cada sesión cubre una tanda del material (tamaño según formato:
@@ -10,16 +10,19 @@ Prácticas: ver EJERCICIOS.md.
 
 - Último punto estudiado: ninguno todavía — arrancamos en la Sesión #01
 - Última tanda: ninguna todavía (las tandas se numeran "Sesión #NN")
-- PRÓXIMA SESIÓN: `/rename {{PREFIJO}}-s01`
+- PRÓXIMA SESIÓN: `/rename obs-s02`
   (el nombre de la sesión de Claude sale SIEMPRE de esta línea, no se
   calcula: es un contador distinto al de las tandas, porque una sesión
   de Claude puede cubrir 2-3 tandas. Claude la actualiza al cerrar.)
+- Próximo material: Platzi clases 01-04 (FUENTES.md, F1)
 - Prácticas pendientes: ninguna todavía — esta línea lista SOLO lo
   pendiente (nombres, sin historial); estados completos, fechas y
   repasos viven en EJERCICIOS.md (fuente de verdad)
 - Último triage (`/pendientes`): nunca todavía
 - Último examen (`/examen`): nunca todavía
-- Entorno verificado: (lo completa Claude en el `/setup`)
+- Entorno verificado (2026-11-10): Obsidian 1.14.4, nvim 0.12.6, git,
+  gh, jq, ttyper, anki, pdftotext, pandoc ✅ · markdownlint-cli2 ❌ (F3)
+  · ~/Proyectos/Cerebro ❌ (nace en la clase 02)
 
 ## VOCABULARIO (solo si el material está en otro idioma; una fila por término nuevo)
 

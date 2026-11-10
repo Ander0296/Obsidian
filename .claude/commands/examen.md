@@ -16,13 +16,18 @@ Si no te dije de qué, elegí 2-3 conceptos de CONCEPTOS DOMINADOS en
    respuesta a esta pregunta: no.
 2. **Una pregunta por vez, y esperás.** Nada de listas de 5 preguntas: eso lo
    contesto salteado y me miento solo.
-3. Mezclá tipos de pregunta (adaptalos a este tema — los definiste en el
-   `/setup`):
-   - **aplicar**: un caso concreto que tengo que resolver, con una trampa real
-   - **detectar el error**: algo mal hecho, de los errores que ya cometí
+3. Mezclá tipos de pregunta (los de este tema, definidos en el `/setup`):
+   - **aplicar**: un caso concreto con una trampa real ("tenés esta
+     captura de un video: ¿qué nota sale, dónde va y con qué enlaces?")
+   - **detectar el error**: una nota o un pedazo de Markdown mal hecho,
+     de los errores que ya cometí (nota no atómica, enlace sin
+     contexto, YAML de propiedades roto, Markdown que no renderiza,
+     sintaxis de Obsidian donde iba CommonMark)
    - **explicámelo con tus palabras**: sin usar la palabra que lo define
-   - **elegí entre A y B y justificá**: sin respuesta única; se evalúa el
-     argumento, no la opción
+   - **elegí entre A y B y justificá**: carpeta vs etiqueta vs enlace
+     vs MOC, plantilla vs base...; se evalúa el argumento, no la opción
+   - **teclado**: qué hace tal tecla en el modo Vim de Obsidian o tal
+     comando de obsidian.nvim (desde F3), sin abrir nada
 4. Cuando conteste: veredicto directo. Bien, a medias o mal, y POR QUÉ. Si
    contesté con la palabra correcta pero sin entender, decímelo — eso es
    justo lo que este comando existe para detectar.

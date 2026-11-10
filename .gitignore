@@ -1,16 +1,29 @@
-# Material de estudio: pantallazos Y texto copiado en .md
-# (copyright — NUNCA subir, el repo puede ser público). Ignora la
-# carpeta completa, así que cubre cualquier formato que se deje adentro.
+# Material de estudio: transcripciones, capítulos y docs copiados en .md
+# (copyright — NUNCA subir: este repo ES PÚBLICO). Ignora la carpeta
+# completa (material/visto/ incluida: se crea a mano en cada PC), así
+# que cubre cualquier formato que se deje adentro.
 material/
+
+# Red de seguridad de copyright: los libros de F2 (Ahrens, Forte) no
+# pueden subirse NUNCA, ni aunque queden fuera de material/ por error.
+*.pdf
+*.epub
+*.mobi
+*.azw3
+
+# Por si abro este repo como bóveda en Obsidian por error: su config y
+# su papelera son locales. (Mi bóveda de verdad es ~/Proyectos/Cerebro.)
+.obsidian/
+.trash/
 
 # Archivos locales de herramientas
 .codegraph/
 .claude/settings.local.json
 .atl/
 
-# Compilados/temporales típicos (Claude agrega los del tema en el MENSAJE 0)
-*.class
-__pycache__/
+# Temporales de Vim, por si alguna config los deja al lado del archivo
+*.swp
+*.swo
 
 # Basura del sistema
 .DS_Store

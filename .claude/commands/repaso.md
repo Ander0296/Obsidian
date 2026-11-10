@@ -17,6 +17,9 @@ desde cero: verla arruina la prueba.
    checklist de `ToDo/` si el tema tiene uno, y al final el prompt de
    entrega ya relleno (`/entrega ...`). Nada de la solución ni
    esqueletos de la respuesta.
+   Si es repaso de un `cNN`, el trabajo va en una nota NUEVA de
+   `~/Proyectos/Cerebro`, nunca editando la original (y vos no creás
+   nada ahí: el candado no te deja).
 2. Decime en una línea dónde está y esperá a que lo entregue.
 
 Cuando lo entregue, compará mi versión nueva contra la original (está

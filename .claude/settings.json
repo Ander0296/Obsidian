@@ -1,4 +1,13 @@
 {
+  "permissions": {
+    "additionalDirectories": ["~/Proyectos/Cerebro"],
+    "allow": [
+      "Read(~/Proyectos/Cerebro/**)",
+      "Bash(git -C ~/Proyectos/Cerebro status:*)",
+      "Bash(git -C ~/Proyectos/Cerebro log:*)",
+      "Bash(git -C ~/Proyectos/Cerebro diff:*)"
+    ]
+  },
   "hooks": {
     "SessionStart": [
       {

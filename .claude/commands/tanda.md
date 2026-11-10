@@ -13,14 +13,19 @@ Aplicá el **flujo por tanda** completo de CLAUDE.md (no lo leas con
 Read: ya lo tenés cargado), respetando el presupuesto de contexto:
 
 1. Leé el material de la tanda en orden de nombre.
-2. Explicámelo PIEZA POR PIEZA, anunciando siempre cuál ("PÁGINA 70:",
-   "PANTALLAZO 2:") para que lo pueda seguir con la vista. En español,
+2. Explicámelo PIEZA POR PIEZA, anunciando siempre cuál
+   ("CLASE 04 · MINUTO 2:30:" si la transcripción trae tiempos,
+   "CLASE 04, PARTE 2:" si no; "PÁGINA 70:" en libros) para que lo
+   pueda seguir con la vista. Donde haya un ⚠️, me perdí ahí: frená y
+   explicalo más a fondo. En español,
    con palabras propias, COMPRIMIENDO — no transcribiendo. Si algo no
    tiene base previa, frená y explicá la base primero.
 3. Mostrame el contenido clave en el chat, comentado solo donde enseña
    algo nuevo.
 4. Si la tanda trae ejercicios del material, avisame cuáles son y
-   creales su archivo de arranque.
+   creales su archivo de arranque. Si la clase enseña algo que se hace
+   en la bóveda, eso es una práctica `cNN` para Cerebro (arranque en
+   `ejercicios/`, trabajo en `~/Proyectos/Cerebro`).
 5. Verificá que entendí con 1-2 preguntas cortas antes de cerrar.
 
 Cuando termines de explicar, en el mismo turno:

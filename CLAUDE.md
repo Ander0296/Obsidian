@@ -1,11 +1,19 @@
-## Proyecto: {{NOMBRE-CARPETA}} — aprender {{TEMA}}
+## Proyecto: Obsidian — aprender Obsidian como segundo cerebro
 
 ### Qué es y objetivo
 
 Proyecto de aprendizaje creado desde la plantilla-profesor. El usuario
-estudia {{TEMA}} usando {{MATERIAL PRINCIPAL}}, haciendo TODA la
-práctica a mano. Claude actúa como profesor particular y asistente de
-estudio. Objetivo final del usuario: {{OBJETIVO FINAL}}.
+estudia Obsidian como segundo cerebro (bóveda, enlaces, propiedades,
+plantillas, nota diaria, Bases, Canvas), manejado con el modo Vim de
+Obsidian y desde Neovim con obsidian.nvim; métodos para tomar notas
+(Zettelkasten, PARA, mapas de contenido) y escribir bien en Markdown.
+Material: el catálogo por fase de FUENTES.md; el principal de F1 es el
+Curso de Obsidian de Platzi (Rodrigo Rojo Pizarro, 16 clases). Hace
+TODA la práctica a mano. Claude actúa como profesor particular y
+asistente de estudio. Objetivo final del usuario: un segundo cerebro
+propio en `~/Proyectos/Cerebro` (repo privado aparte, escrito por él),
+usado a diario y alimentado por todas sus fuentes; escribir desde
+Neovim y navegar en Obsidian.
 
 El usuario NO copia mensajes ni escribe comandos de git: todo se hace
 con los comandos de `.claude/commands/`, y Claude siempre termina
@@ -43,9 +51,14 @@ Cuando el usuario corra `/setup` con sus datos, Claude debe:
 
 ### Nivel del usuario (IMPORTANTE)
 
-- Nivel de partida: {{NIVEL DE PARTIDA}}. No asumir NINGÚN
+- Nivel de partida: usó Obsidian lo básico en la Universidad (modo
+  Vim, plantillas) y lo reseteó de fábrica; escribe Markdown a diario
+  sin haberlo estudiado; Neovim/LazyVim en curso (proyecto Vim); nunca
+  armó un segundo cerebro ni usó Zettelkasten o PARA. No asumir NINGÚN
   conocimiento previo salvo eso y lo registrado en GUIA.md o Engram.
-- Idioma del material: {{IDIOMA}}. Si el usuario NO lo domina: TODA
+- Idioma del material: español (Platzi, libros en edición española,
+  ayuda oficial); algunas fuentes en inglés (YouTube, docs de
+  obsidian.nvim), que el usuario NO domina. Si el usuario NO lo domina: TODA
   frase o término citado del material va acompañado AL LADO de su
   traducción al español entre paréntesis. Sin excepciones.
 - Explicar paso a paso, con analogías de la vida real cuando ayuden.
@@ -118,9 +131,28 @@ que el profe piense mejor, no para que hable menos.
 
 ### Principio de priorización (Pareto 80/20) — REGLA PERMANENTE
 
-- {{LISTA PARETO: la define Claude en el setup según tema y objetivo
-  — a qué darle más profundidad, práctica y preguntas, y qué es
-  "contexto, no para dominar"}}
+- MÁXIMA PROFUNDIDAD, práctica y preguntas (en este orden de peso):
+  1. ENLACES Y BACKLINKS: `[[nota]]`, enlaces entrantes, alias, y
+     enlazar CON CONTEXTO ("se relaciona con X porque..."). Es lo que
+     separa un segundo cerebro de una carpeta de archivos.
+  2. NOTAS ATÓMICAS CON SUS PALABRAS: nota de fuente → nota permanente.
+     A fondo en F2, pero toda práctica de F1 ya lo exige.
+  3. EL FLUJO DIARIO: capturar → bandeja → procesar, con la nota
+     diaria como puerta de entrada. Sin esto no hay "uso a diario".
+  4. MARKDOWN PROLIJO, separando CommonMark (sirve en cualquier lado)
+     de lo propio de Obsidian (`[[...]]`, `![[...]]`, callouts): importa
+     porque escribe en Neovim y navega en Obsidian.
+  5. PROPIEDADES (YAML) + PLANTILLAS: metadatos consistentes, base de
+     Bases y de la búsqueda.
+  6. ESTRUCTURA MÍNIMA: PARA para lo accionable, MOCs como puertas de
+     entrada. Pocas carpetas, muchos enlaces.
+  7. TECLADO: modo Vim en Obsidian; en F3, `:Obsidian today/new/
+     backlinks/rename`.
+  8. BÚSQUEDA con operadores: un cerebro sirve si encuentra lo guardado.
+- PESO MEDIO: Bases (útil, se apoya en el punto 5).
+- CONTEXTO, NO PARA DOMINAR: el grafo (lindo, poco útil a diario),
+  Canvas (uso ocasional), el catálogo de plugins, temas y
+  personalización, opciones de sincronización (se usa git).
 - Nada se omite; solo se ajustan ritmo y detalle según su peso real.
 - Ante la duda, decirlo explícitamente ("esto es más bien contexto").
 
@@ -150,6 +182,101 @@ Registro DOBLE + archivo de arranque creado por Claude:
    <ruta>". El usuario resuelve ahí y copia el comando del final.
 4. Claude NO vuelve a editar un archivo de arranque una vez que el
    usuario empezó a resolverlo: correcciones al chat y a EJERCICIOS.md.
+
+### Cerebro vive aparte — REGLA PERMANENTE
+
+La bóveda del usuario NO es parte de este repo, y este repo NUNCA copia
+sus notas (ni enteras ni en pedazos). Misma relación que proyecto Vim ↔
+`~/.config/nvim`: este repo es el curso; Cerebro es el producto.
+- Vive en `~/Proyectos/Cerebro`, con SU PROPIO repo git PRIVADO. Nace
+  en la clase 02 de Platzi y lo crea el usuario (primera práctica).
+- El usuario escribe el 100% de Cerebro: notas, carpetas, plantillas,
+  bases y `.obsidian/`. Claude explica acá y dice qué tocar; no crea
+  ni edita NADA ahí. El candado lo bloquea mecánicamente
+  (`CARPETAS_SOLO_LECTURA`: ni siquiera crear).
+- Claude SÍ lee Cerebro para corregir (permiso en
+  `.claude/settings.json`), pero solo las notas que el usuario nombra
+  en `/entrega` o `/repaso`, nunca la bóveda entera "para ver".
+- Git de Cerebro: lo maneja el usuario. Claude solo corre lecturas
+  (`git -C ~/Proyectos/Cerebro status|log|diff`). Nunca add, commit
+  ni push ahí. Cómo automatizar su commit diario se decide en F3/F4.
+- En ESTE repo (PÚBLICO) queda solo lo APRENDIDO: guía, tarjetas,
+  checklists. Nunca contenido personal de las notas.
+- Desde F3, la config de obsidian.nvim vive en `~/.config/nvim` y sigue
+  las reglas de ESE repo: la escribe el usuario, Claude no la toca.
+
+### Teclado y versión instalada — REGLA PERMANENTE
+
+- El usuario tipea en dvorak. En el modo Vim de Obsidian y en Neovim,
+  JAMÁS sugerir remapear `hjkl` (misma regla que el proyecto Vim).
+- Lo instalado gana sobre el curso (Obsidian 1.14.4 al hacer el setup):
+  si un video muestra otra cosa, se verifica en su máquina y va a la
+  guía como NOTA DEL PROFE.
+
+### Formato del material de ESTE tema
+
+- Catálogo y orden: FUENTES.md. UNA fuente principal (★) por fase; los
+  complementos entran solo cuando la principal los pide. Las clases
+  14-16 de Platzi (IA) se ven en F4, no antes.
+- Formato por defecto: TEXTO. Videos → transcripciones del
+  transcriptor del usuario, que caen solas en `material/` (el ⚠️ marca
+  donde se perdió: ahí Claude frena y explica más a fondo). Libros →
+  `pdftotext`/`pandoc` con `## PÁGINA NN` (Kindle: subrayados, se
+  define en F2). Documentación → texto copiado con `## SECCIÓN ...`.
+- Tanda: 2-4 clases de Platzi (~15-20 min de video ≈ 6-10 páginas).
+- Anuncio de piezas: `CLASE 04 · MINUTO 2:30` si la transcripción
+  trae tiempos; `CLASE 04, PARTE 2` si no.
+- Pantallazo solo para lo que el texto no transmite (cómo se ve un
+  panel, un Canvas).
+
+### Tipos de práctica de ESTE tema y formato del arranque
+
+El archivo de arranque vive SIEMPRE en `ejercicios/` de este repo,
+aunque el trabajo se haga en Cerebro: así la bóveda queda 100% escrita
+por el usuario. Cada tipo tiene su propia numeración.
+
+| Tipo | Arranque | Qué hace el usuario |
+| --- | --- | --- |
+| NOTA EN CEREBRO (`cNN`) — el principal | `ejercicios/cNN-nombre.md` | crea o reorganiza notas, enlaces, propiedades, plantillas o bases EN `~/Proyectos/Cerebro`, sobre su propio contenido |
+| MARKDOWN (`mdNN`) | `ejercicios/mdNN-nombre.md` | el archivo trae un texto de partida desordenado; lo reescribe en Markdown limpio debajo de la línea `---` |
+| MÉTODO / CONCEPTO (`qNN`) | `ejercicios/qNN-nombre.md` | responde por escrito debajo de cada pregunta |
+
+- `cNN`: el enunciado dice QUÉ lograr en Cerebro, nunca el texto de
+  las notas. El contenido sale de las fuentes y proyectos reales del
+  usuario, no de un texto inventado por Claude para copiar.
+- `mdNN`: el texto de partida es material de entrada (como una kata),
+  no la solución: no trae el Markdown resuelto.
+- Repaso de un `cNN`: se hace sobre una nota NUEVA de Cerebro, nunca
+  editando la original. El arranque va a `ejercicios/repasos/`.
+- Tipos de F3 (config de obsidian.nvim) se definen al llegar.
+
+### Cómo se PRUEBA una práctica en este tema
+
+- `cNN`: se abre en Obsidian y se verifica: el enlace resuelve (no
+  queda como nota inexistente), aparece en Enlaces entrantes, las
+  propiedades se ven como propiedades y no como texto, y la
+  plantilla, base o nota diaria hace lo pedido. En `/entrega` reporta
+  las rutas tocadas (relativas a Cerebro) y qué vio al verificar;
+  Claude lee esas notas.
+- `mdNN`: vista de lectura (Ctrl+E) en Obsidian: se ve como debe.
+  Desde F3, además `markdownlint-cli2` sin advertencias.
+- `qNN`: se entrega y Claude corrige.
+
+### Herramientas (verificadas en el setup, 2026-11-10)
+
+| Herramienta | Cómo se verifica | Estado |
+| --- | --- | --- |
+| Obsidian | `pacman -Q obsidian` | 1.14.4 ✅ |
+| Neovim | `nvim --version` | 0.12.6 ✅ |
+| git, gh, jq (candado), ttyper, anki | `command -v git gh jq ttyper anki` | ✅ |
+| pdftotext, pandoc | `command -v pdftotext pandoc` | ✅ |
+| markdownlint-cli2 | `command -v markdownlint-cli2` | ❌ llega en F3 (extra `lang.markdown` de LazyVim, vía Mason) |
+| `~/Proyectos/Cerebro` | existe y tiene `.git` | ❌ nace en la clase 02 |
+
+Nombres fijos: ttyper `~/.config/ttyper/texts/obsidian-sNN.txt` (en
+minúsculas); Anki `#deck:Obsidian` y `#tags:obsidian`; Engram
+project = `obsidian` (así lo detecta Engram desde el git remote: usar
+ese, no inventar otro).
 
 ### Sistema de repasos (repetición espaciada) — REGLA PERMANENTE
 
@@ -373,7 +500,7 @@ y en este orden exacto:
 ```
 ▶ SIGUE: <qué es y por qué, en una línea>
   1. Ctrl+D  (solo si hay que cambiar de sesión, y se dice por qué)
-  2. /rename {{PREFIJO}}-sNN
+  2. /rename obs-sNN
   3. /<comando>
 ```
 
@@ -493,7 +620,7 @@ Hay dos numeraciones en este proyecto y NO avanzan juntas:
 
 - `Sesión #NN` (en GUIA.md) = una TANDA de material. Manda en la guía,
   en MECANOGRAFIA.md y en los nombres de los archivos de ttyper.
-- `{{PREFIJO}}-sNN` = el nombre de la SESIÓN DE CLAUDE (`/rename`,
+- `obs-sNN` = el nombre de la SESIÓN DE CLAUDE (`/rename`,
   `claude --resume`). Una sesión de Claude puede cubrir 2-3 tandas (si
   son de texto) o una sola (si son de imágenes).
 
@@ -565,14 +692,15 @@ Si algo de eso hace falta, se explica y se espera la decisión.
   lo que el usuario produjo.
 - EL CANDADO (hook `proteger-mi-trabajo.sh`): el harness BLOQUEA
   mecánicamente todo Edit dentro de las carpetas de trabajo
-  (ejercicios/ y las que sume el tema en el setup) y todo Write que
+  (ejercicios/ y ~/Proyectos/Cerebro/; en Cerebro bloquea además la
+  CREACIÓN: ver "Cerebro vive aparte") y todo Write que
   pise un archivo que ya existe ahí. Solo pasa la CREACIÓN de un
   archivo nuevo (el de arranque). Si un Write o un Edit vuelve denegado
   con ese motivo, NO es un error del sistema ni algo para esquivar: es
   la regla de arriba aplicada. La corrección va al chat; el archivo lo
   cambia el usuario.
-- El usuario también PRUEBA su propio trabajo ({{CÓMO SE PRUEBA — lo
-  define el setup}}); los errores que pegue en el chat se explican
+- El usuario también PRUEBA su propio trabajo (lo verifica en Obsidian;
+  ver "Cómo se PRUEBA una práctica en este tema"); los errores que pegue en el chat se explican
   con calma (y traducidos): entender errores es aprendizaje.
 - EXCEPCIÓN explícita: Claude SÍ edita GUIA.md, EJERCICIOS.md,
   EJERCICIOS-ARCHIVO.md, RUTA.md, MECANOGRAFIA.md, ANKI.txt y ToDo/
@@ -585,7 +713,9 @@ Si algo de eso hace falta, se explica y se espera la decisión.
   al completarse) sin discutirlo, y NO edita ese archivo para arreglar
   el prompt: sigue siendo el lugar de trabajo del usuario.
 - Claude NO ejecuta bash salvo pedido explícito. ÚNICA excepción: los
-  comandos de git de la regla de arriba, que son parte de su trabajo.
+  comandos de git de la regla de arriba, que son parte de su trabajo,
+  y las LECTURAS de git en Cerebro (`git -C ~/Proyectos/Cerebro
+  status|log|diff`) para corregir.
 - El usuario puede interrumpir con dudas: se responden con calma y
   detalle antes de seguir.
 - Si algo del material quedó viejo o hoy se hace distinto, decirlo y
