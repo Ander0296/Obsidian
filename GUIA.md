@@ -8,15 +8,15 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: Platzi clase 04 completa (Markdown: títulos,
-  énfasis, listas, tareas, separador, `[[` con autocompletado)
-- Última tanda: Sesión #02 (2026-11-11, en obs-s02)
-- PRÓXIMA SESIÓN: `/rename obs-s03`
+- Último punto estudiado: Platzi clase 04 completa + PDF "Guía de
+  Markdown para Obsidian" (material/): nivel 01 y pág. 8
+- Última tanda: Sesión #03 (2026-11-11, en obs-s03)
+- PRÓXIMA SESIÓN: `/rename obs-s04`
   (sale SIEMPRE de esta línea, no se calcula: contador distinto al de
   las tandas. Claude la actualiza al cerrar.)
 - Próximo material: Platzi clase 05 (y 01-02 si no se vieron: la 02
   trae el repo de Cerebro)
-- Prácticas pendientes: c01, c02 (estados y repasos: EJERCICIOS.md)
+- Prácticas pendientes: c01, c02, q01 (estados y repasos: EJERCICIOS.md)
 - Último triage (`/pendientes`): nunca todavía · Último examen: nunca
 - Entorno (2026-11-10): Obsidian 1.14.4, nvim 0.12.6, git, gh, jq,
   ttyper, anki, pdftotext, pandoc ✅ · markdownlint-cli2 ❌ (F3) ·
@@ -70,6 +70,22 @@ SESIÓN #02 — 2026-11-11 — Platzi clase 04: Markdown en Obsidian (clase 04 c
 - Con teclado (modo Vim): `/## ` + `n` entre secciones · `f[lrx` marca una tarea.
 - PRÁCTICAS CREADAS: c02 · Checklist nuevo: ToDo/markdown.md
 - PRÓXIMO PASO: hacer c01 y c02; material: clase 05.
+
+SESIÓN #03 — 2026-11-11 — PDF "Guía de Markdown para Obsidian" (recurso de Platzi, material/): nivel 01 y pág. 8 (1 de 5 niveles)
+- Cada sintaxis tiene su alcance: CommonMark (todos lados) · GFM = CommonMark +
+  tachado, tareas y tablas (GitHub) · propio de Obsidian (`==resaltado==`,
+  callouts, ancho de imagen). Lo de Obsidian se ve literal afuera.
+- Un Enter suelto en CommonMark NO corta el renglón; Obsidian sí lo muestra
+  (opción Strict line breaks). Prolijo: párrafos separados por línea en blanco.
+- Texto con `===` o `---` abajo = título 1 o 2 "subrayado" (el porqué de la trampa).
+- Un solo estilo: `**` y `*`. Numerada: solo cuenta el primer número.
+- `!` delante = mostrar en vez de enlazar (vuelve con `![[nota]]`).
+- Nombres de nota sin `#`, `|`, `^`, `:`, `%%` ni corchetes dobles: rompen enlaces.
+- Con teclado (modo Vim): `>>`/`<<` anidan · `ddp` baja un ítem · `f[lrx` tarea.
+- Nota del profe: falta verificar en 1.14.4 el resaltado de color con emoji y si
+  `Ctrl+E` en modo normal lo toma Vim (q01, Parte B). Niveles 02-05: PENDIENTES.md.
+- PRÁCTICAS CREADAS: q01 (las preguntas de chequeo, diferidas a pedido)
+- PRÓXIMO PASO: c01 → c02 → q01; material: clase 05.
 
 # ============================================================
 # FORMATO DE CADA SESIÓN (referencia para Claude — copiar y llenar)

@@ -34,7 +34,15 @@ deuda falsa que se relee para siempre y no se salda nunca.
 # DIFERIDO A PROPÓSITO
 # ============================================================
 
-(vacío)
+- **PDF "Guía de Markdown para Obsidian" (material/), niveles 02-05**
+  (2026-11-11, Sesión #03). Qué falta: nivel 02 Conectar (enlace a
+  encabezado, a bloque y con texto visible; incrustar con `![[...]]`;
+  etiquetas; propiedades YAML), nivel 03 (tablas, callouts, notas al
+  pie, comentarios, escapar con `\`), nivel 04 (bloques de código,
+  HTML, iframes, URIs `obsidian://`) y nivel 05 (LaTeX, Mermaid,
+  búsquedas y Bases incrustadas). Rescate: cada pieza se explica
+  cuando llega la clase de Platzi que la toca; lo que el curso no
+  cubra, desde el PDF al cerrar F1.
 
 # ============================================================
 # DADAS DE BAJA (decisión tomada, no vuelven)

@@ -47,6 +47,10 @@ PRÁCTICA c02 — Tu nota de la clase de Markdown — [ ] pendiente (después de
 Tipo: nota en Cerebro
 Arranque: ejercicios/c02-nota-de-clase-en-markdown.md | Si te trabás: Sesión #02 de GUIA.md | Checklist: ToDo/markdown.md
 
+PRÁCTICA q01 — ¿Dónde funciona cada Markdown? — [ ] pendiente (Parte B después de c01)
+Tipo: método-concepto
+Arranque: ejercicios/q01-donde-funciona-cada-markdown.md | Si te trabás: Sesión #03 de GUIA.md | Checklist: ToDo/markdown.md
+
 # ============================================================
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)
 # ============================================================

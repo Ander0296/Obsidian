@@ -12,3 +12,7 @@ s01 — enlaces y archivo sobre aplicación:
 s02 — Markdown en Obsidian:
 - ## Título con espacio; #palabra sin espacio es una etiqueta en Obsidian.
 - - [x] tarea hecha, *cursiva* con uno y **negrita** con dos asteriscos.
+
+s03 — dónde funciona cada Markdown:
+- ==resaltado== es solo de Obsidian; **negrita** y *cursiva* funcionan en cualquier Markdown.
+- Un Enter suelto no corta el renglón: separá los párrafos con una línea en blanco.
