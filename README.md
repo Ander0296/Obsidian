@@ -38,8 +38,8 @@ profe me dice cuál sigue. Tampoco escribo comandos de git: los hace él.
     (sigue abajo)
 
 Obsidian/
-├── material/        acá dejo la tanda de hoy (NO va a git: copyright)
-│   └── visto/       lo ya explicado — lo archiva Claude solo
+├── material/        NO va a git (copyright)
+│   └── tanda.txt    la bandeja: pego el texto; Claude lo lee y la vacía
 ├── ejercicios/      los ENUNCIADOS + prompt de entrega (cNN, mdNN,
 │   │                qNN). Las cNN se resuelven en Cerebro; las otras,
 │   │                en el mismo archivo. La solución la escribo yo
@@ -83,7 +83,7 @@ a hacer un repaso. **Siempre es lo mismo:**
 
 ```
 [TERMINAL]  cd ~/Proyectos/Obsidian
-[TERMINAL]  armo la tanda en material/  (ver "Cómo armar una tanda")
+[TERMINAL]  pego la tanda en material/tanda.txt  (ver "Cómo armar una tanda")
 [TERMINAL]  claude
 [CLAUDE]    /arranque
 ```
@@ -119,7 +119,7 @@ Los prompts completos viven en `.claude/commands/`.
 | Comando | Para qué | Cuándo lo uso |
 | --- | --- | --- |
 | `/arranque` | dónde quedamos, cómo se llama esta sesión y qué toca hoy | **siempre, primero** |
-| `/tanda` | me explica el material que dejé en `material/` | por cada tanda |
+| `/tanda` | me explica el texto que pegué en `material/tanda.txt` | por cada tanda |
 | `/entrega` | corrige la práctica que terminé | cuando termino una |
 | `/repaso` | repaso vencido, desde cero | cuando el profe avisa |
 | `/pendientes` | triage: qué se pudre, qué se salda, qué doy de baja | domingo, 5 minutos |
@@ -149,33 +149,30 @@ misma página en texto, y encima Claude lo lee con menos precisión.
 
 | Formato del material           | Tanda        | Tandas por sesión |
 | ------------------------------ | ------------ | ----------------- |
-| TEXTO (copiado a material/)    | 6-10 páginas | 2-3               |
+| TEXTO (pegado en tanda.txt)    | 6-10 páginas | 2-3               |
 | TEXTO denso o con mucho código | 5-8 páginas  | 2                 |
 | IMÁGENES (pantallazos)         | 3-5 imágenes | 1                 |
 | MIXTA (aunque sea 1 imagen)    | como imágenes| 1                 |
 
 En ESTE proyecto: los videos los pasa a texto mi transcriptor
-(`CTRL+SUPER+ALT+P` → `Obsidian` → `CTRL+SUPER+ALT+R`) y caen solos en
-`material/`; `CTRL+SUPER+ALT+D` marca ⚠️ donde me pierdo y ahí el profe
-frena. Una tanda = 2-4 clases de Platzi. Libros y docs: ver `FUENTES.md`.
+(`CTRL+SUPER+ALT+P` → `Obsidian` → `CTRL+SUPER+ALT+R`);
+`CTRL+SUPER+ALT+D` marca ⚠️ donde me pierdo y ahí el profe frena.
+Libros y docs: ver `FUENTES.md`.
 
-Cómo paso una tanda de TEXTO (lo más barato y lo preferido):
-- Copio el texto del libro/curso y lo pego en un archivo nuevo:
-  `material/tanda.md` (o `tanda-01.md`, `tanda-02.md`...).
-- Le pongo marcas de dónde viene, para que Claude pueda anunciarlas:
-  una línea `## PÁGINA 70` (o Ubicación, minuto, sección) antes de
-  cada pedazo. Con eso puedo seguir el material con la vista.
-- Si una figura o tabla NO se puede copiar como texto, agrego ESE
-  pantallazo suelto y el resto va en texto. Eso ya hace la tanda
-  mixta: una sola tanda en esa sesión.
+Cómo paso una tanda (UNA bandeja fija, sirve para cualquier fuente):
+- Pego el texto en `material/tanda.txt`: la transcripción, el pedazo
+  de libro o la doc. Cuánto pego lo decido yo (orientativo: 2-4
+  clases de Platzi).
+- Si el texto no trae marcas de dónde viene, le pongo una línea
+  `## CLASE 01` o `## PÁGINA 70` antes de cada pedazo, para que Claude
+  las anuncie y yo siga el material con la vista.
+- Si una figura o tabla NO se puede copiar como texto, pego ESE
+  pantallazo en el chat. Eso ya hace la tanda mixta: una sola tanda
+  en esa sesión, y después el profe me va a decir que cortemos
+  (`/cambio`).
 
-Cómo paso una tanda de IMÁGENES (solo cuando no hay texto):
-- Dejo 3-5 pantallazos en `material/` y listo. Después de una tanda así el
-  profe me va a decir que cortemos (`/cambio`): las imágenes ya explicadas
-  no tienen por qué seguir pesando en el contexto el resto del día.
-
-Cuando termina de explicar, Claude mueve solo la tanda a
-`material/visto/`. Yo no muevo nada.
+En `/tanda`, Claude lee la bandeja entera y la deja VACÍA en el mismo
+movimiento, lista para la próxima. Yo no borro nada.
 
 # ============================================================
 # CÓMO ES UNA SESIÓN, PASO A PASO (como si no supiera nada)
@@ -196,12 +193,11 @@ me lo dice el profe (ver "quién decide qué", más abajo).
 cd ~/Proyectos/Obsidian
 ```
 
-Y dejo la tanda en `material/`: el texto copiado en un `.md`, o los
-pantallazos si no se puede copiar. (Cómo armarla: la sección "Cómo armar una
-tanda".)
+Y pego la tanda en `material/tanda.txt`. (Cómo armarla: la sección "Cómo
+armar una tanda".)
 
 Si hoy no vengo a ver material nuevo —vengo a entregar una práctica, a hacer
-un repaso o a que me tome examen— este paso no va: `material/` queda vacía y
+un repaso o a que me tome examen— este paso no va: `tanda.txt` queda vacío y
 listo.
 
 ### PASO 2 — abro la sesión `[TERMINAL]`
@@ -252,8 +248,8 @@ Si toca un repaso vencido, `/repaso`. Si el profe me propuso examen,
 
 Me explica el material pieza por pieza, anunciando cuál va ("PÁGINA 70:")
 para que lo siga con la vista. Cuando termina, deja todo guardado solo:
-guía, frases de tipeo, tarjetas de Anki, y mueve el material a
-`material/visto/`.
+guía, frases de tipeo, tarjetas de Anki, y deja `material/tanda.txt`
+vacío.
 
 **Puedo interrumpirlo cuando quiera.** Si algo no se entendió, lo digo y lo
 explica de nuevo de otra forma, las veces que haga falta. Eso no "gasta" la
@@ -266,7 +262,7 @@ motivo en una línea:
 
 | Me dice | Qué hago |
 | --- | --- |
-| "seguimos con otra tanda" | armo la próxima en `material/` y otro `/tanda` |
+| "seguimos con otra tanda" | pego la próxima en `material/tanda.txt` y otro `/tanda` |
 | "conviene cortar acá" | `/cambio` → `Ctrl+D` → `claude` → el `/rename` que me dio |
 | "cerremos el día" | `/cierre` |
 

@@ -101,7 +101,7 @@ ahí; el paso 4 debe responder igual "Hi TU-USUARIO!".
    cd ~/Proyectos
    git clone git@github.com:TU-USUARIO/NOMBRE-DEL-TEMA.git
    cd NOMBRE-DEL-TEMA
-   mkdir -p material/visto ejercicios/repasos
+   mkdir -p material ejercicios/repasos && touch material/tanda.txt
 4. Abrí `claude` en la carpeta y corré `/setup` con tus datos (ver README.md).
 
 # ============================================================
@@ -113,8 +113,9 @@ ahí; el paso 4 debe responder igual "Hi TU-USUARIO!".
    cd ~/Proyectos
    git clone git@github.com:TU-USUARIO/NOMBRE-DEL-TEMA.git
    cd NOMBRE-DEL-TEMA
-   mkdir -p material/visto
-   (material/ llega vacía A PROPÓSITO: las imágenes no viajan por git)
+   mkdir -p material && touch material/tanda.txt
+   (material/ no viaja por git A PROPÓSITO: copyright. Si me olvido,
+   el profe crea `material/tanda.txt` vacío en el primer `/tanda`)
 3. LA REGLA DE ORO CON VARIOS PCs — la ejecuta el PROFE, no vos:
    - Al EMPEZAR: `/arranque` hace `git pull` antes de leer nada.
    - Al TERMINAR: `/cierre` (o `/cambio`) te muestra qué cambió, te

@@ -73,7 +73,7 @@ es el material acumulado en el contexto, que se re-envía completo en
 CADA turno posterior. Costo aproximado por página de material:
 
 - IMAGEN (pantallazo): ~1.500-2.500 tokens. Caro y permanente.
-- TEXTO (copiado a material/ o pegado en el chat): ~400-800 tokens.
+- TEXTO (pegado en material/tanda.txt o en el chat): ~400-800 tokens.
   Hasta 3-4 veces más barato, y sin ambigüedad de lectura.
 
 Reglas que salen de eso:
@@ -219,12 +219,19 @@ sus notas (ni enteras ni en pedazos). Misma relación que proyecto Vim ↔
 - Catálogo y orden: FUENTES.md. UNA fuente principal (★) por fase; los
   complementos entran solo cuando la principal los pide. Las clases
   14-16 de Platzi (IA) se ven en F4, no antes.
-- Formato por defecto: TEXTO. Videos → transcripciones del
-  transcriptor del usuario, que caen solas en `material/` (el ⚠️ marca
-  donde se perdió: ahí Claude frena y explica más a fondo). Libros →
-  `pdftotext`/`pandoc` con `## PÁGINA NN` (Kindle: subrayados, se
-  define en F2). Documentación → texto copiado con `## SECCIÓN ...`.
-- Tanda: 2-4 clases de Platzi (~15-20 min de video ≈ 6-10 páginas).
+- Formato por defecto: TEXTO, por UNA bandeja fija y general para
+  todas las fuentes: `material/tanda.txt`. El usuario pega ahí el
+  texto (transcripción de Platzi, libro, docs). En `/tanda` Claude lo
+  lee ENTERO con Read y en el mismo movimiento lo deja VACÍO (Write
+  vacío), sin guardar copia. Si está vacío o no existe: lo dice, lo
+  crea vacío y espera. No hay `material/visto/`.
+- Marcas dentro del texto: el ⚠️ del transcriptor marca donde se
+  perdió (ahí Claude frena y explica más a fondo); `## PÁGINA NN` en
+  libros (Kindle: subrayados, se define en F2); `## SECCIÓN ...` en
+  documentación.
+- Tanda: el TAMAÑO lo decide el usuario según lo que quiera ver sin
+  saturarse; Claude no lo recorta ni lo discute (orientativo: 2-4
+  clases de Platzi ≈ 6-10 páginas).
 - Anuncio de piezas: `CLASE 04 · MINUTO 2:30` si la transcripción
   trae tiempos; `CLASE 04, PARTE 2` si no.
 - Pantallazo solo para lo que el texto no transmite (cómo se ve un
@@ -440,8 +447,9 @@ puntero "Si te trabás" (ej: "Checklist: ToDo/nombre-del-tema.md").
 
 ### Flujo por cada tanda de material (lo dispara `/tanda`)
 
-1. Leer el material de la tanda (texto de material/ o las imágenes
-   indicadas, según formato — ver Presupuesto de contexto).
+1. Leer ENTERO `material/tanda.txt` y dejarlo VACÍO en el mismo
+   movimiento (ver Formato del material); las imágenes, si hacen
+   falta, llegan pegadas en el chat.
    Si falta un pedazo, CLASIFICARLO EN EL MOMENTO (regla de
    PENDIENTES.md) y decirlo en UNA línea: "cubierto igual" (se descarta
    y no se anota en ningún lado), "hueco de formato" (no se pudo pasar
@@ -470,7 +478,8 @@ puntero "Si te trabás" (ej: "Checklist: ToDo/nombre-del-tema.md").
 4. Si la tanda trae ejercicios del material: avisar cuáles son y
    aplicar la regla de prácticas (archivo de arranque + registro).
 5. Verificar comprensión con 1-2 preguntas cortas antes de cerrar.
-6. Mover el material ya explicado a material/visto/.
+6. Confirmar que `material/tanda.txt` quedó vacío (se vació en el
+   paso 1; no se archiva copia del material).
 7. Actualizar GUIA.md agregando la sesión en FORMATO CORTO (5-8
    bullets, SIN bloques de código ni contenido repetido del chat,
    máx ~15 líneas; ver el formato de referencia al final de la guía),
@@ -522,7 +531,7 @@ Es lo primero de CADA sesión. Claude:
    | --- | --- | --- |
    | 1 | un repaso VENCIDO en REPASOS PROGRAMADOS | **REPASO** (el más antiguo primero) |
    | 2 | una práctica [~] en curso que el usuario ya entregó | **ENTREGA** |
-   | 3 | material sin explicar en material/ | **TANDA** |
+   | 3 | texto pegado en material/tanda.txt | **TANDA** |
    | 4 | prácticas [ ] pendientes y nada de material nuevo | **PRÁCTICA** |
    | 5 | nada de lo anterior | **PREGUNTA** qué quiere hacer |
 
@@ -545,7 +554,7 @@ Viven en `.claude/commands/`. Claude los nombra por su nombre exacto:
 | Comando | Para qué |
 | --- | --- |
 | `/arranque` | dónde quedamos, cómo se llama esta sesión y qué toca hoy — el primero de cada sesión |
-| `/tanda` | explicar la tanda de material que está en material/ |
+| `/tanda` | explicar el texto que pegué en material/tanda.txt |
 | `/entrega` | corregir una práctica terminada |
 | `/repaso` | hacer un repaso vencido, desde cero |
 | `/cambio` | cerrar esta sesión y abrir una limpia (mitad del día) |

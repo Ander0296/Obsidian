@@ -1,18 +1,21 @@
 ---
-description: Explica la tanda de material que dejé en material/ (repetible, una vez por tanda)
-argument-hint: [opcional: qué hay en la tanda, ej "páginas 70-78 en texto" o "4 pantallazos"]
+description: Explica el texto que pegué en material/tanda.txt (repetible, una vez por tanda)
+argument-hint: [opcional: qué hay en la tanda, ej "clases 01-02 de Platzi"]
 ---
 
 Tanda nueva. $ARGUMENTS
 
-El material está en `material/` (si vino como texto, en los `.md`; si
-vino como imágenes, en la raíz de la carpeta). No entres a
-`material/visto/`: eso ya está explicado.
+El material está en la bandeja fija `material/tanda.txt`. Leelo ENTERO
+con Read y en el mismo movimiento dejalo VACÍO (Write vacío), sin
+guardar copia. Si está vacío o no existe: decímelo, crealo vacío y
+esperá a que pegue el texto. El tamaño de la tanda lo decido yo: no lo
+recortes ni lo discutas. Si hace falta una imagen, te la pego en el
+chat.
 
 Aplicá el **flujo por tanda** completo de CLAUDE.md (no lo leas con
 Read: ya lo tenés cargado), respetando el presupuesto de contexto:
 
-1. Leé el material de la tanda en orden de nombre.
+1. Leé la bandeja y vaciala (como dice arriba).
 2. Explicámelo PIEZA POR PIEZA, anunciando siempre cuál
    ("CLASE 04 · MINUTO 2:30:" si la transcripción trae tiempos,
    "CLASE 04, PARTE 2:" si no; "PÁGINA 70:" en libros) para que lo
@@ -29,8 +32,7 @@ Read: ya lo tenés cargado), respetando el presupuesto de contexto:
 5. Verificá que entendí con 1-2 preguntas cortas antes de cerrar.
 
 Cuando termines de explicar, en el mismo turno:
-- mové el material de la tanda a `material/visto/` para que la raíz
-  quede vacía;
+- confirmá que `material/tanda.txt` quedó vacío;
 - actualizá `GUIA.md` con la sesión en FORMATO CORTO (5-8 bullets,
   máx ~15 líneas) y el INICIO RÁPIDO, incluida la línea
   **PRÓXIMA SESIÓN**;
