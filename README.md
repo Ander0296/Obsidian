@@ -276,8 +276,8 @@ nombre de la sesión siguiente. `/cierre` es "terminé por hoy".
 /cierre
 ```
 
-Verifica que quedó todo guardado, archiva lo cerrado, me muestra qué cambió
-en git y me pide el OK para subirlo. Después, `Ctrl+D` y listo.
+Verifica que quedó todo guardado, archiva lo cerrado, lo sube a git sin
+preguntarme y me muestra qué subió. Después, `Ctrl+D` y listo.
 
 **Nunca me voy sin `/cierre`.** Es lo que guarda el día y lo sube: sin eso,
 mañana (o el otro PC) no se entera de nada.

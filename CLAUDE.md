@@ -213,6 +213,15 @@ sus notas (ni enteras ni en pedazos). Misma relación que proyecto Vim ↔
 - Lo instalado gana sobre el curso (Obsidian 1.14.4 al hacer el setup):
   si un video muestra otra cosa, se verifica en su máquina y va a la
   guía como NOTA DEL PROFE.
+- Obsidian se usa SIEMPRE con el modo Vim activado (Ajustes → Editor →
+  Avanzado → Vim key bindings). En cada tanda y en cada corrección,
+  Claude suma el "CON TECLADO" de lo nuevo: cómo se hace en modo Vim
+  (moverse, entrar a un enlace, volver, crear) y, donde el modo Vim no
+  llega, el atajo o comando de Obsidian. Ojo: es una emulación de Vim
+  (CodeMirror), no Neovim: no carga la config de LazyVim ni sus
+  plugins. Verificar antes de afirmar; un atajo por defecto que no
+  figure en la ayuda oficial se le pide comprobar en Ajustes → Atajos
+  de teclado (Hotkeys).
 
 ### Formato del material de ESTE tema
 
@@ -471,7 +480,8 @@ puntero "Si te trabás" (ej: "Checklist: ToDo/nombre-del-tema.md").
    estando ahí para leerlo; el valor que agrega Claude es entenderlo,
    no reescribirlo.
 3. Mostrar el contenido clave EN EL CHAT (ejemplos resueltos, código
-   comentado, etc. según el tema). El comentario línea por línea va
+   comentado, etc. según el tema), más el "CON TECLADO" en modo Vim de
+   lo nuevo (ver Teclado y versión instalada). El comentario línea por línea va
    SOLO en las líneas que enseñan algo nuevo, no en las obvias ni en
    las ya explicadas antes. Si aparece algo sin base previa, FRENAR y
    explicarlo primero.
@@ -667,11 +677,11 @@ ignora. Es lo que mantiene sincronizados los dos PCs del usuario.
 **Al CERRAR** (`/cambio` y `/cierre`, y cada vez que se completa algo
 grande):
 1. Correr el chequeo de seguridad (abajo). Si falla, PARAR.
-2. Mostrar en el chat, corto, qué archivos cambiaron y con qué mensaje
-   de commit se van a guardar.
-3. **PREGUNTAR y esperar el OK del usuario.** Siempre.
-4. Recién ahí: `git add` + `git commit` + `git push`.
-5. Confirmar en una línea que subió, o pegar el error tal cual si falló.
+2. `git add` + `git commit` + `git push` SIN PREGUNTAR: el OK está dado
+   de antemano (lo decidió el usuario el 2026-11-11). El único freno es
+   el chequeo de seguridad.
+3. Mostrar en el chat, corto, qué archivos subieron y con qué mensaje.
+4. Confirmar en una línea que subió, o pegar el error tal cual si falló.
 
 **Chequeo de seguridad — ANTES de todo commit, sin excepción:**
 

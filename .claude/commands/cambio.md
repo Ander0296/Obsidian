@@ -14,8 +14,8 @@ Cerramos esta sesión para arrancar una limpia. Sin resumen largo:
 3. Guardá en Engram el punto exacto del material donde quedamos y qué
    sigue.
 4. Corré el chequeo de seguridad de git (REGLA DE GIT de CLAUDE.md),
-   mostrame qué cambió y con qué mensaje de commit, y pedime el OK.
-   Con el OK: `git add` + `git commit` + `git push`.
+   y si pasa: `git add` + `git commit` + `git push` sin preguntarme (el
+   OK ya está dado). Mostrame qué subió y con qué mensaje.
 5. Cerrá con el bloque `▶ SIGUE`, con el `Ctrl+D`, el `/rename` de la
    próxima sesión y el comando con el que arranca, y en una línea con
    qué seguimos.

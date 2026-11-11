@@ -24,7 +24,8 @@ Read: ya lo tenés cargado), respetando el presupuesto de contexto:
    con palabras propias, COMPRIMIENDO — no transcribiendo. Si algo no
    tiene base previa, frená y explicá la base primero.
 3. Mostrame el contenido clave en el chat, comentado solo donde enseña
-   algo nuevo.
+   algo nuevo, y el "CON TECLADO": cómo se hace lo nuevo en Obsidian
+   con el modo Vim activado.
 4. Si la tanda trae ejercicios del material, avisame cuáles son y
    creales su archivo de arranque. Si la clase enseña algo que se hace
    en la bóveda, eso es una práctica `cNN` para Cerebro (arranque en

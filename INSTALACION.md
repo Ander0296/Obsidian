@@ -118,8 +118,8 @@ ahí; el paso 4 debe responder igual "Hi TU-USUARIO!".
    el profe crea `material/tanda.txt` vacío en el primer `/tanda`)
 3. LA REGLA DE ORO CON VARIOS PCs — la ejecuta el PROFE, no vos:
    - Al EMPEZAR: `/arranque` hace `git pull` antes de leer nada.
-   - Al TERMINAR: `/cierre` (o `/cambio`) te muestra qué cambió, te
-     pide el OK y hace `git add` + `git commit` + `git push`.
+   - Al TERMINAR: `/cierre` (o `/cambio`) hace `git add` + `git commit`
+     + `git push` sin preguntar y te muestra qué subió.
    ¿Por qué importa? Si tocás archivos en dos PCs sin sincronizar, git
    no sabe cuál versión vale y se arma un "conflicto". Pull al empezar
    + push al terminar = cero conflictos, siempre. Por eso nunca hay
