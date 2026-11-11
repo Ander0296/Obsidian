@@ -5,4 +5,10 @@ Acá la frase va natural; en `~/.config/ttyper/texts/obsidian-sNN.txt`
 va aplanada, una palabra por línea. Las frases no se editan: si un
 concepto cambió, se agrega una nueva.
 
-(se llena a partir de la sesión #01)
+s01 — enlaces y archivo sobre aplicación:
+- Un enlace [[nota]] opaco apunta a una nota que todavía no existe.
+- Archivo sobre aplicación: cada nota es un archivo .md que abro con cualquier editor.
+
+s02 — Markdown en Obsidian:
+- ## Título con espacio; #palabra sin espacio es una etiqueta en Obsidian.
+- - [x] tarea hecha, *cursiva* con uno y **negrita** con dos asteriscos.

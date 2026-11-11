@@ -2,3 +2,11 @@
 #html:false
 #deck:Obsidian
 #tags:obsidian
+En Obsidian, ¿qué significa que un enlace interno [[...]] se vea más opaco que el resto?	Que es un enlace no resuelto: apunta a una nota que todavía no existe. Al hacerle clic, Obsidian crea esa nota con ese nombre y el enlace pasa a verse normal.
+¿Qué es una bóveda (vault) de Obsidian vista desde el disco?	Una carpeta común: cada nota es un archivo .md de texto plano adentro de ella, y el título de la nota es el nombre del archivo.
+¿Qué dice la filosofía archivo sobre aplicación (file over app) de Obsidian?	Que las notas son archivos locales de texto plano que pertenecen al usuario y sobreviven a la app: cualquier otro editor (Neovim, Bloc de notas) puede abrirlas y editarlas, y Obsidian ve los cambios al instante.
+En una nota de Obsidian, ¿qué diferencia hay entre [[Nota]] y [texto](https://url)?	[[Nota]] es un enlace interno (wikilink) a otra nota de la bóveda, propio de Obsidian y no de Markdown estándar; [texto](url) es un enlace Markdown estándar, que funciona en cualquier programa que lea Markdown.
+En Obsidian, ¿qué obtenés si escribís #Ideas sin espacio al principio de una línea?	Una etiqueta (tag), no un título. Un título necesita un espacio después de los numerales: # Ideas (nivel 1) hasta ###### Ideas (nivel 6).
+En Markdown, ¿qué pasa si escribís --- justo debajo de una línea de texto, sin línea en blanco entre medio?	La línea de texto de arriba se convierte en un título de nivel 2. Para que --- sea un separador horizontal, hay que dejar una línea en blanco antes.
+¿Cómo se escribe una tarea con casilla en Markdown y cómo se marca como hecha?	Con guion, espacio, corchetes con un espacio adentro y otro espacio: - [ ] tarea. Hecha lleva una x adentro: - [x] tarea. Es una extensión de GitHub que Obsidian soporta, no Markdown estándar puro.
+En Markdown, ¿cómo se escribe cursiva, negrita y negrita con cursiva?	Con asteriscos pegados al texto a cada lado: uno para cursiva (*texto*), dos para negrita (**texto**) y tres para las dos juntas (***texto***).

@@ -43,4 +43,4 @@ estás dejando que otro encuentre tus errores por vos.
 
 ## Índice
 
-- (vacío — Claude agrega una línea acá cada vez que crea un checklist)
+- [markdown.md](markdown.md) — títulos, énfasis, listas, tareas, separador y enlaces en Obsidian

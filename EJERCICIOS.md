@@ -39,7 +39,13 @@ Arranque: ejercicios/repasos/... (desde cero, sin mirar el original)
 # PRÁCTICAS ABIERTAS
 # ============================================================
 
-(todavía no hay prácticas — se agregan a partir de la sesión #01)
+PRÁCTICA c01 — Primera bóveda y primer enlace — [ ] pendiente
+Tipo: nota en Cerebro
+Arranque: ejercicios/c01-primera-boveda.md | Si te trabás: Sesión #01 de GUIA.md
+
+PRÁCTICA c02 — Tu nota de la clase de Markdown — [ ] pendiente (después de c01)
+Tipo: nota en Cerebro
+Arranque: ejercicios/c02-nota-de-clase-en-markdown.md | Si te trabás: Sesión #02 de GUIA.md | Checklist: ToDo/markdown.md
 
 # ============================================================
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)
