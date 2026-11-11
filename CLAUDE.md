@@ -234,6 +234,18 @@ sus notas (ni enteras ni en pedazos). Misma relación que proyecto Vim ↔
   lee ENTERO con Read y en el mismo movimiento lo deja VACÍO (Write
   vacío), sin guardar copia. Si está vacío o no existe: lo dice, lo
   crea vacío y espera. No hay `material/visto/`.
+- DOCUMENTOS DE LAS CLASES (PDF y recursos descargables del curso): el
+  usuario los deja en `material/`, al lado de `tanda.txt`. Son SU hoja
+  de consulta: Claude NO los vacía, NO los borra ni los mueve, y nunca
+  copia su contenido al repo (`material/` está en `.gitignore`).
+  - Se leen como TEXTO con `pdftotext -layout` si tienen texto
+    seleccionable; pantallazo solo para lo que el texto no transmite.
+  - Se explican como una tanda más (Sesión #NN, cierre completo),
+    priorizando con el Pareto: lo que el curso todavía no dio se
+    difiere a PENDIENTES.md y se rescata cuando llega su clase.
+  - En `/tanda` Claude mira `material/`: si hay un documento de la
+    clase que se explica, lo suma; si hay uno nunca explicado (ninguna
+    sesión de GUIA.md lo nombra), lo avisa en UNA línea.
 - Marcas dentro del texto: el ⚠️ del transcriptor marca donde se
   perdió (ahí Claude frena y explica más a fondo); `## PÁGINA NN` en
   libros (Kindle: subrayados, se define en F2); `## SECCIÓN ...` en
@@ -732,10 +744,11 @@ Si algo de eso hace falta, se explica y se espera la decisión.
   vigente (corrección al chat, máx. 3 líneas en EJERCICIOS.md, archivar
   al completarse) sin discutirlo, y NO edita ese archivo para arreglar
   el prompt: sigue siendo el lugar de trabajo del usuario.
-- Claude NO ejecuta bash salvo pedido explícito. ÚNICA excepción: los
+- Claude NO ejecuta bash salvo pedido explícito. Excepciones: los
   comandos de git de la regla de arriba, que son parte de su trabajo,
-  y las LECTURAS de git en Cerebro (`git -C ~/Proyectos/Cerebro
-  status|log|diff`) para corregir.
+  las LECTURAS de git en Cerebro (`git -C ~/Proyectos/Cerebro
+  status|log|diff`) para corregir, y la LECTURA de los documentos de
+  `material/` (`eza material/`, `pdftotext -layout`).
 - El usuario puede interrumpir con dudas: se responden con calma y
   detalle antes de seguir.
 - Si algo del material quedó viejo o hoy se hace distinto, decirlo y
