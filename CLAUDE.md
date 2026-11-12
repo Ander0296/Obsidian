@@ -308,7 +308,11 @@ por el usuario. Cada tipo tiene su propia numeración.
   enunciado le da el texto corto exacto a tipear (incluidas las frases
   de contexto de los enlaces), o vale cualquier relleno. En la
   corrección de un `gNN` se evalúa SOLO el manejo, nunca la calidad del
-  contenido. Nombres de menús en español;
+  contenido. CORTAS (pedido, 2026-11-12): máx ~7 pasos de 2-3 líneas;
+  el texto a tipear va en un bloque de código aparte (nunca la sintaxis
+  entre paréntesis en la prosa: se copia literal); prompt de entrega
+  sin placeholders `<...>`, con campos "Etiqueta:" a completar.
+  Nombres de menús en español;
   si Claude no está seguro del texto exacto, lo dice en el paso.
 - `mdNN`: el texto de partida es material de entrada (como una kata),
   no la solución: no trae el Markdown resuelto.

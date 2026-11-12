@@ -42,9 +42,11 @@ Arranque: ejercicios/repasos/... (desde cero, sin mirar el original)
 (2026-11-12: c01-c04 y q01 se dieron de baja a pedido del usuario; se
 rehacen desde cero como prácticas GUIADAS gNN, en orden.)
 
-PRÁCTICA g02 — Markdown a mano — [ ] pendiente
+PRÁCTICA g02 — Markdown básico — [~] en curso (rehecha corta el 2026-11-12)
 Tipo: guiada
-Arranque: ejercicios/g02-markdown-a-mano.md | Si te trabás: Sesiones #02-#03 de GUIA.md | Checklist: ToDo/markdown.md
+Arranque: ejercicios/g02-markdown-basico.md | Si te trabás: Sesiones #02-#03 de GUIA.md | Checklist: ToDo/markdown.md
+1er intento: listas y tareas no salieron porque el enunciado viejo mostraba `(1. )` y copió los paréntesis; tareas sin texto tras `[ ]`. Títulos, énfasis, incrustar, separador y etiqueta bien.
+Ojo (error del enunciado, paso 5): `ddkP` falla si "Filtros" es la última línea; usar `ddp` sobre "Café molido".
 
 PRÁCTICA g03 — Buscar, marcar y dividir — [ ] pendiente (después de g02)
 Tipo: guiada
@@ -60,9 +62,6 @@ Arranque: ejercicios/g04-carpetas-para-y-bandeja.md | Si te trabás: Sesión #05
 
 REPASO — PRÁCTICA g01 (r1) — programado: 2026-11-16 — [ ] pendiente
 Arranque: ejercicios/repasos/... (desde cero, sin mirar el original; foco: atajo de seguir enlace; el texto de las notas lo da el enunciado)
-
-Nota para g02-g04: donde el arranque pide "una frase tuya", vale cualquier relleno; no se corrige el contenido, solo el manejo.
-
 # ============================================================
 # CONCEPTOS DOMINADOS (entran al graduarse una práctica con r3 bien)
 # ============================================================
