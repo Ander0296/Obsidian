@@ -42,12 +42,7 @@ Arranque: ejercicios/repasos/... (desde cero, sin mirar el original)
 (2026-11-12: c01-c04 y q01 se dieron de baja a pedido del usuario; se
 rehacen desde cero como prácticas GUIADAS gNN, en orden.)
 
-PRÁCTICA g01 — Notas y enlaces: crear, enlazar, navegar — [ ] pendiente
-Tipo: guiada
-Arranque: ejercicios/g01-notas-y-enlaces.md | Si te trabás: Sesión #01 de GUIA.md
-Ojo (error del enunciado): en el paso 8, Café SÍ enlaza a Molienda; lo que muestra el panel es la frase que escribiste EN Molienda.
-
-PRÁCTICA g02 — Markdown a mano — [ ] pendiente (después de g01)
+PRÁCTICA g02 — Markdown a mano — [ ] pendiente
 Tipo: guiada
 Arranque: ejercicios/g02-markdown-a-mano.md | Si te trabás: Sesiones #02-#03 de GUIA.md | Checklist: ToDo/markdown.md
 
@@ -63,7 +58,8 @@ Arranque: ejercicios/g04-carpetas-para-y-bandeja.md | Si te trabás: Sesión #05
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)
 # ============================================================
 
-(vacío por ahora)
+REPASO — PRÁCTICA g01 (r1) — programado: 2026-11-16 — [ ] pendiente
+Arranque: ejercicios/repasos/... (desde cero, sin mirar el original; foco: enlaces con contexto de RELACIÓN)
 
 # ============================================================
 # CONCEPTOS DOMINADOS (entran al graduarse una práctica con r3 bien)

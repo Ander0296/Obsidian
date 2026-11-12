@@ -15,7 +15,7 @@ Prácticas: ver EJERCICIOS.md.
   (sale SIEMPRE de esta línea, no se calcula: contador distinto al de
   las tandas. Claude la actualiza al cerrar.)
 - Próximo material: Platzi clase 07 (y 01-02 si no se vieron)
-- Prácticas pendientes: g01 → g04, guiadas (reemplazan a c01-c04 y q01
+- Prácticas pendientes: g02 → g04 (g01 ✅ 2026-11-12, r1 el 11-16), guiadas (reemplazan a c01-c04 y q01
   desde 2026-11-12; Cerebro = bóveda de práctica) · estados: EJERCICIOS.md
 - Último triage (`/pendientes`): nunca todavía · Último examen: nunca
 - Entorno: Obsidian 1.15.0 EN ESPAÑOL, nvim 0.12.6 ✅ · markdownlint ❌ (F3) ·
