@@ -46,7 +46,7 @@ PRÁCTICA g02 — Markdown básico — [~] en curso (rehecha corta el 2026-11-12
 Tipo: guiada
 Arranque: ejercicios/g02-markdown-basico.md | Si te trabás: Sesiones #02-#03 de GUIA.md | Checklist: ToDo/markdown.md
 1er intento: listas y tareas no salieron porque el enunciado viejo mostraba `(1. )` y copió los paréntesis; tareas sin texto tras `[ ]`. Títulos, énfasis, incrustar, separador y etiqueta bien.
-Ojo (error del enunciado, paso 5): `ddkP` falla si "Filtros" es la última línea; usar `ddp` sobre "Café molido".
+Rehecha de 4 pasos el mismo día (pedido: más corta); sin desafío.
 
 PRÁCTICA g03 — Buscar, marcar y dividir — [ ] pendiente (después de g02)
 Tipo: guiada
