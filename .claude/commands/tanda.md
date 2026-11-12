@@ -31,8 +31,9 @@ Read: ya lo tenés cargado), respetando el presupuesto de contexto:
    con el modo Vim activado.
 4. Si la tanda trae ejercicios del material, avisame cuáles son y
    creales su archivo de arranque. Si la clase enseña algo que se hace
-   en la bóveda, eso es una práctica `cNN` para Cerebro (arranque en
-   `ejercicios/`, trabajo en `~/Proyectos/Cerebro`).
+   en la bóveda, eso es una práctica GUIADA `gNN` (pasos de manejo con
+   "Deberías ver" + desafío final; arranque en `ejercicios/`, trabajo
+   en `~/Proyectos/Cerebro` con contenido neutro).
 5. Verificá que entendí con 1-2 preguntas cortas antes de cerrar.
 
 ORDEN: hacé PRIMERO todo lo de abajo (archivos, tarjetas, Engram) y

@@ -11,7 +11,9 @@ Material: el catálogo por fase de FUENTES.md; el principal de F1 es el
 Curso de Obsidian de Platzi (Rodrigo Rojo Pizarro, 16 clases). Hace
 TODA la práctica a mano. Claude actúa como profesor particular y
 asistente de estudio. Objetivo final del usuario: un segundo cerebro
-propio en `~/Proyectos/Cerebro` (bóveda aparte, con Obsidian Sync, escrita por el usuario),
+propio (bóvedas nuevas que el usuario creará cuando ya sepa manejar
+Obsidian; mientras aprende, `~/Proyectos/Cerebro` es su bóveda de
+PRÁCTICA, con Obsidian Sync, escrita por el usuario),
 usado a diario y alimentado por todas sus fuentes; escribir desde
 Neovim y navegar en Obsidian.
 
@@ -191,6 +193,11 @@ sus notas (ni enteras ni en pedazos). Misma relación que proyecto Vim ↔
 `~/.config/nvim`: este repo es el curso; Cerebro es el producto.
 - Vive en `~/Proyectos/Cerebro`. Nace en la clase 02 de Platzi y la
   crea el usuario (primera práctica).
+- ROL (decidido por el usuario el 2026-11-12): Cerebro es la bóveda de
+  PRÁCTICA (el taller) donde se hacen las prácticas guiadas `gNN` con
+  contenido neutro. Las bóvedas "de verdad" las crea el usuario aparte
+  cuando ya sepa manejar Obsidian; si quiere que Claude las lea, se
+  suman al permiso y al candado igual que Cerebro.
 - El usuario escribe el 100% de Cerebro: notas, carpetas, plantillas,
   bases y `.obsidian/`. Claude explica acá y dice qué tocar; no crea
   ni edita NADA ahí. El candado lo bloquea mecánicamente
@@ -286,27 +293,34 @@ por el usuario. Cada tipo tiene su propia numeración.
 
 | Tipo | Arranque | Qué hace el usuario |
 | --- | --- | --- |
-| NOTA EN CEREBRO (`cNN`) — el principal | `ejercicios/cNN-nombre.md` | crea o reorganiza notas, enlaces, propiedades, plantillas o bases EN `~/Proyectos/Cerebro`, sobre su propio contenido |
+| PRÁCTICA GUIADA (`gNN`) — el principal | `ejercicios/gNN-nombre.md` | sigue pasos de MANEJO en Obsidian (en `~/Proyectos/Cerebro`), cada uno con su "Deberías ver", y cierra con un desafío sin pasos |
 | MARKDOWN (`mdNN`) | `ejercicios/mdNN-nombre.md` | el archivo trae un texto de partida desordenado; lo reescribe en Markdown limpio debajo de la línea `---` |
 | MÉTODO / CONCEPTO (`qNN`) | `ejercicios/qNN-nombre.md` | responde por escrito debajo de cada pregunta |
 
-- `cNN`: el enunciado dice QUÉ lograr en Cerebro, nunca el texto de
-  las notas. El contenido sale de las fuentes y proyectos reales del
-  usuario, no de un texto inventado por Claude para copiar.
+- `gNN` (cambio pedido por el usuario el 2026-11-12, reemplaza a las
+  viejas `cNN`): entrena a MANEJAR la herramienta, no a escribir sobre
+  la vida del usuario. Formato: objetivo · pasos numerados (acción +
+  "CON TECLADO" en modo Vim + línea "✔ Deberías ver: ...") · DESAFÍO
+  final sin pasos (lo mismo, solo) · "Si te trabás" · prompt de
+  entrega. Contenido NEUTRO de relleno (tema fijo: café) con nombres
+  de notas fijados por el enunciado, así Claude sabe qué leer. El
+  usuario tipea todo; Claude no da texto largo para copiar: a lo sumo
+  "una o dos frases tuyas sobre el tema". Nombres de menús en español;
+  si Claude no está seguro del texto exacto, lo dice en el paso.
 - `mdNN`: el texto de partida es material de entrada (como una kata),
   no la solución: no trae el Markdown resuelto.
-- Repaso de un `cNN`: se hace sobre una nota NUEVA de Cerebro, nunca
-  editando la original. El arranque va a `ejercicios/repasos/`.
+- Repaso de un `gNN`: SOLO la lista de objetivos, sin pasos ni "Deberías
+  ver" (el músculo es hacerlo sin guía), sobre notas NUEVAS de Cerebro
+  con otro tema neutro. El arranque va a `ejercicios/repasos/`.
 - Tipos de F3 (config de obsidian.nvim) se definen al llegar.
 
 ### Cómo se PRUEBA una práctica en este tema
 
-- `cNN`: se abre en Obsidian y se verifica: el enlace resuelve (no
-  queda como nota inexistente), aparece en Enlaces entrantes, las
-  propiedades se ven como propiedades y no como texto, y la
-  plantilla, base o nota diaria hace lo pedido. En `/entrega` reporta
-  las rutas tocadas (relativas a Cerebro) y qué vio al verificar;
-  Claude lee esas notas.
+- `gNN`: el propio usuario se controla con cada "✔ Deberías ver". En
+  `/entrega` reporta en qué paso algo NO se vio como decía (o "todo
+  bien") y cómo le fue el desafío; Claude lee las notas que fija el
+  enunciado y corrige el manejo (enlaces que resuelven, Enlaces
+  entrantes, Markdown, carpetas), más los atajos que costaron.
 - `mdNN`: vista de lectura (Ctrl+E) en Obsidian: se ve como debe.
   Desde F3, además `markdownlint-cli2` sin advertencias.
 - `qNN`: se entrega y Claude corrige.

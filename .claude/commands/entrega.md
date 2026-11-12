@@ -1,17 +1,16 @@
 ---
 description: Entrego una práctica terminada para que la corrijas
-argument-hint: [práctica (cNN/mdNN/qNN), notas que toqué en Cerebro, y qué vi al verificarla en Obsidian]
+argument-hint: [práctica (gNN/mdNN/qNN), en qué paso algo no se vio como decía, y cómo me fue el desafío]
 ---
 
 Terminé una práctica. $ARGUMENTS
 
-Si no te dije las rutas o qué vi al verificarla, pedímelos antes de
-corregir: sin eso la corrección es a ciegas.
-- `cNN`: el trabajo está en `~/Proyectos/Cerebro`. Leé SOLO las notas
-  que nombré. Nunca crees ni edites nada ahí.
-  Verificación esperada: enlaces que resuelven, enlaces entrantes,
-  propiedades que se ven como propiedades, plantilla/base/nota diaria
-  haciendo lo pedido.
+Si no te dije cómo me fue en los "Deberías ver" y en el desafío,
+pedímelo antes de corregir: sin eso la corrección es a ciegas.
+- `gNN`: el trabajo está en `~/Proyectos/Cerebro`. Leé SOLO las notas
+  que fija el enunciado de la práctica. Nunca crees ni edites nada ahí.
+  Corregí el MANEJO: enlaces que resuelven, enlaces entrantes,
+  Markdown, carpetas, y los atajos/pasos donde me trabé.
 - `mdNN` y `qNN`: el trabajo está en el propio archivo de
   `ejercicios/`. En `mdNN`, ¿lo miré en vista de lectura (Ctrl+E)?
   Desde F3, ¿markdownlint-cli2 sin advertencias?

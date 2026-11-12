@@ -21,12 +21,12 @@ Corrección escrita en archivo: MÁXIMO 3 líneas. El detalle va al chat.
 
 FORMATOS (referencia para Claude — copiar y llenar):
 
-TIPOS (cada uno con su numeración): cNN = nota en Cerebro (se resuelve
-en ~/Proyectos/Cerebro) · mdNN = Markdown (en el mismo archivo) ·
-qNN = método/concepto (en el mismo archivo).
+TIPOS (cada uno con su numeración): gNN = guiada (pasos de manejo en
+~/Proyectos/Cerebro, contenido neutro) · mdNN = Markdown (en el mismo
+archivo) · qNN = método/concepto (en el mismo archivo).
 
-PRÁCTICA cNN|mdNN|qNN — [tema] — [ ] pendiente
-Tipo: nota en Cerebro / Markdown / método-concepto
+PRÁCTICA gNN|mdNN|qNN — [tema] — [ ] pendiente
+Tipo: guiada / Markdown / método-concepto
 Arranque: ejercicios/... | Si te trabás: Sesión #Y de GUIA.md
 
 MATERIAL — [nombre] — [tema] (punto del material, Sesión #Y) — [ ] pendiente
@@ -39,25 +39,25 @@ Arranque: ejercicios/repasos/... (desde cero, sin mirar el original)
 # PRÁCTICAS ABIERTAS
 # ============================================================
 
-PRÁCTICA c01 — Primera bóveda y primer enlace — [ ] pendiente
-Tipo: nota en Cerebro
-Arranque: ejercicios/c01-primera-boveda.md | Si te trabás: Sesión #01 de GUIA.md
+(2026-11-12: c01-c04 y q01 se dieron de baja a pedido del usuario; se
+rehacen desde cero como prácticas GUIADAS gNN, en orden.)
 
-PRÁCTICA c02 — Tu nota de la clase de Markdown — [ ] pendiente (después de c01)
-Tipo: nota en Cerebro
-Arranque: ejercicios/c02-nota-de-clase-en-markdown.md | Si te trabás: Sesión #02 de GUIA.md | Checklist: ToDo/markdown.md
+PRÁCTICA g01 — Notas y enlaces: crear, enlazar, navegar — [ ] pendiente
+Tipo: guiada
+Arranque: ejercicios/g01-notas-y-enlaces.md | Si te trabás: Sesión #01 de GUIA.md
+Ojo (error del enunciado): en el paso 8, Café SÍ enlaza a Molienda; lo que muestra el panel es la frase que escribiste EN Molienda.
 
-PRÁCTICA q01 — ¿Dónde funciona cada Markdown? — [ ] pendiente (Parte B después de c01)
-Tipo: método-concepto
-Arranque: ejercicios/q01-donde-funciona-cada-markdown.md | Si te trabás: Sesión #03 de GUIA.md | Checklist: ToDo/markdown.md
+PRÁCTICA g02 — Markdown a mano — [ ] pendiente (después de g01)
+Tipo: guiada
+Arranque: ejercicios/g02-markdown-a-mano.md | Si te trabás: Sesiones #02-#03 de GUIA.md | Checklist: ToDo/markdown.md
 
-PRÁCTICA c03 — Moverte por tu bóveda: buscar, marcar y dividir — [ ] pendiente (después de c01)
-Tipo: nota en Cerebro
-Arranque: ejercicios/c03-buscar-marcar-dividir.md | Si te trabás: Sesión #04 de GUIA.md
+PRÁCTICA g03 — Buscar, marcar y dividir — [ ] pendiente (después de g02)
+Tipo: guiada
+Arranque: ejercicios/g03-buscar-marcar-dividir.md | Si te trabás: Sesión #04 de GUIA.md
 
-PRÁCTICA c04 — Tu estructura PARA y tu bandeja de entrada — [ ] pendiente (después de c01)
-Tipo: nota en Cerebro
-Arranque: ejercicios/c04-para-y-bandeja.md | Si te trabás: Sesión #05 de GUIA.md
+PRÁCTICA g04 — Carpetas, PARA y bandeja — [ ] pendiente (después de g03)
+Tipo: guiada
+Arranque: ejercicios/g04-carpetas-para-y-bandeja.md | Si te trabás: Sesión #05 de GUIA.md
 
 # ============================================================
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)

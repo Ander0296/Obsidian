@@ -32,16 +32,16 @@ profe me dice cuál sigue. Tampoco escribo comandos de git: los hace él.
 
 ```
 ~/Proyectos/
-├── Cerebro/         MI BÓVEDA (Obsidian Sync, sin git). Acá hago las
-│                    prácticas cNN; Claude solo la LEE para corregir
+├── Cerebro/         BÓVEDA DE PRÁCTICA (Obsidian Sync, sin git). Acá
+│                    hago las gNN; Claude solo la LEE para corregir
 └── Obsidian/        este repo: el curso
     (sigue abajo)
 
 Obsidian/
 ├── material/        NO va a git (copyright)
 │   └── tanda.txt    la bandeja: pego el texto; Claude lo lee y la vacía
-├── ejercicios/      los ENUNCIADOS + prompt de entrega (cNN, mdNN,
-│   │                qNN). Las cNN se resuelven en Cerebro; las otras,
+├── ejercicios/      los ENUNCIADOS + prompt de entrega (gNN, mdNN,
+│   │                qNN). Las gNN se resuelven en Cerebro; las otras,
 │   │                en el mismo archivo. La solución la escribo yo
 │   └── repasos/     los repasos, siempre desde cero
 ├── FUENTES.md     ★ de dónde aprendo: catálogo por fase, con lo que
@@ -129,7 +129,7 @@ Los prompts completos viven en `.claude/commands/`.
 | `/setup` | configura el proyecto | una sola vez |
 
 Todos aceptan contexto extra: `/tanda son 4 pantallazos del capítulo 5`,
-`/entrega c03: toqué Inbox/idea.md y MOCs/Lectura.md, los enlaces resuelven`.
+`/entrega g03: todo bien hasta el paso 7, el desafío salió solo`.
 
 El prompt de `/entrega` ya relleno está **al final de cada archivo de
 arranque**: lo copio de ahí, es más rápido.
@@ -238,7 +238,7 @@ Si terminé una práctica, va **antes** que el material nuevo: el prompt ya
 relleno está al final del archivo de arranque, lo copio de ahí.
 
 ```
-/entrega c03: toqué Inbox/idea.md, la verifiqué en Obsidian y aparece en enlaces entrantes
+/entrega g01: paso 2 el enlace no se vio opaco; desafío: salió solo
 ```
 
 Si toca un repaso vencido, `/repaso`. Si el profe me propuso examen,
