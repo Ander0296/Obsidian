@@ -57,8 +57,8 @@ SESIÓN #01 — 2026-11-11 — Platzi clase 03: el grafo y los enlaces (clase 03
 - Bóveda = carpeta; nota = archivo `.md`; título de la nota = nombre del archivo.
 - Archivo sobre aplicación: otra app edita el `.md` y Obsidian lo ve al
   instante. Base de "escribir en Neovim, navegar en Obsidian" (F3).
-- Con teclado (modo Vim): `f[` lleva el cursor al enlace + comando "Follow link
-  under cursor" para entrar · `Ctrl+O` saltar a otra nota · `Ctrl+E` lectura.
+- Con teclado (modo Vim): `f[` lleva el cursor al enlace + `Alt+Enter` lo abre
+  ("Seguir enlace bajo el cursor"; verificado por el usuario en g01) · `Ctrl+O` saltar a otra nota · `Ctrl+E` lectura.
 - Ejercicios de la tanda: ninguno del material · PRÁCTICAS CREADAS: c01
 - Nota del profe: transcripción cortada 2:00-2:51 (cubierto igual).
   Registrada como clase 03 por tema y duración (el usuario la creía la 01).
