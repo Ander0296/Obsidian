@@ -213,6 +213,13 @@ sus notas (ni enteras ni en pedazos). Misma relación que proyecto Vim ↔
 
 - El usuario tipea en dvorak. En el modo Vim de Obsidian y en Neovim,
   JAMÁS sugerir remapear `hjkl` (misma regla que el proyecto Vim).
+- OBSIDIAN EN ESPAÑOL (pedido del usuario, 2026-11-11): su interfaz
+  está en español, así que menús, ajustes, comandos de la paleta y
+  botones se nombran EN ESPAÑOL, como los ve él. Nada de nombres en
+  inglés como principal: a lo sumo, entre paréntesis, si sirve para
+  buscar en la documentación o en foros en inglés. Si Claude no está
+  seguro del texto exacto en español, describe dónde está y le pide
+  comprobarlo, en vez de inventar el nombre.
 - Lo instalado gana sobre el curso (Obsidian 1.14.4 al hacer el setup):
   si un video muestra otra cosa, se verifica en su máquina y va a la
   guía como NOTA DEL PROFE.
@@ -237,6 +244,14 @@ sus notas (ni enteras ni en pedazos). Misma relación que proyecto Vim ↔
   lee ENTERO con Read y en el mismo movimiento lo deja VACÍO (Write
   vacío), sin guardar copia. Si está vacío o no existe: lo dice, lo
   crea vacío y espera. No hay `material/visto/`.
+- TRANSCRIPCIÓN DIRECTA (pedido del usuario, 2026-11-11): si transcribe
+  la clase en vivo, el transcriptor la deja en `material/` como
+  `AAAA-MM-DD-HHMM-*.md` (encabezado "Transcripcion automatica",
+  marcas `**[mm:ss]**` y ⚠️). Cuenta como bandeja igual que
+  `tanda.txt`: en `/tanda` Claude lee ENTERA cada una (la más vieja
+  primero, por nombre) y la BORRA (`rm`) en el mismo movimiento, sin
+  copia. Las marcas `**[mm:ss]**` dan el MINUTO del anuncio. Los PDF y
+  recursos de la clase NO se tocan (ver abajo).
 - DOCUMENTOS DE LAS CLASES (PDF y recursos descargables del curso): el
   usuario los deja en `material/`, al lado de `tanda.txt`. Son SU hoja
   de consulta: Claude NO los vacía, NO los borra ni los mueve, y nunca
@@ -471,8 +486,16 @@ puntero "Si te trabás" (ej: "Checklist: ToDo/nombre-del-tema.md").
 
 ### Flujo por cada tanda de material (lo dispara `/tanda`)
 
+ORDEN DE SALIDA (pedido del usuario, 2026-11-11): Claude hace PRIMERO
+todo el trabajo de archivos (pasos 6-12: guía, mecanografía, ttyper,
+Anki, prácticas, ToDo/, Engram) con las herramientas, y SOLO AL FINAL
+escribe la explicación (pasos 2-5) + el registro en pocas líneas + el
+bloque `▶ SIGUE`, todo en el ÚLTIMO mensaje. Así la explicación queda
+abajo de todo, a la vista, y no tapada por las llamadas a herramientas.
+
 1. Leer ENTERO `material/tanda.txt` y dejarlo VACÍO en el mismo
-   movimiento (ver Formato del material); las imágenes, si hacen
+   movimiento, y leer ENTERA y BORRAR cada transcripción directa
+   `material/AAAA-MM-DD-HHMM-*.md` (ver Formato del material); las imágenes, si hacen
    falta, llegan pegadas en el chat.
    Si falta un pedazo, CLASIFICARLO EN EL MOMENTO (regla de
    PENDIENTES.md) y decirlo en UNA línea: "cubierto igual" (se descarta
@@ -556,7 +579,7 @@ Es lo primero de CADA sesión. Claude:
    | --- | --- | --- |
    | 1 | un repaso VENCIDO en REPASOS PROGRAMADOS | **REPASO** (el más antiguo primero) |
    | 2 | una práctica [~] en curso que el usuario ya entregó | **ENTREGA** |
-   | 3 | texto pegado en material/tanda.txt | **TANDA** |
+   | 3 | texto en material/tanda.txt o una transcripción `material/AAAA-MM-DD-HHMM-*.md` | **TANDA** |
    | 4 | prácticas [ ] pendientes y nada de material nuevo | **PRÁCTICA** |
    | 5 | nada de lo anterior | **PREGUNTA** qué quiere hacer |
 

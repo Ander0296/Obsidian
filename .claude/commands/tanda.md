@@ -7,8 +7,11 @@ Tanda nueva. $ARGUMENTS
 
 El material está en la bandeja fija `material/tanda.txt`. Leelo ENTERO
 con Read y en el mismo movimiento dejalo VACÍO (Write vacío), sin
-guardar copia. Si está vacío o no existe: decímelo, crealo vacío y
-esperá a que pegue el texto. El tamaño de la tanda lo decido yo: no lo
+guardar copia. Si transcribí la clase en vivo, también hay una
+transcripción `material/AAAA-MM-DD-HHMM-*.md`: leé ENTERA cada una (la
+más vieja primero) y borrala (`rm`) en el mismo movimiento, sin copia.
+Los PDF de la clase NO se tocan. Si no hay nada en ningún lado:
+decímelo, creá `tanda.txt` vacío y esperá a que pegue el texto. El tamaño de la tanda lo decido yo: no lo
 recortes ni lo discutas. Si hace falta una imagen, te la pego en el
 chat.
 
@@ -32,7 +35,9 @@ Read: ya lo tenés cargado), respetando el presupuesto de contexto:
    `ejercicios/`, trabajo en `~/Proyectos/Cerebro`).
 5. Verificá que entendí con 1-2 preguntas cortas antes de cerrar.
 
-Cuando termines de explicar, en el mismo turno:
+ORDEN: hacé PRIMERO todo lo de abajo (archivos, tarjetas, Engram) y
+escribí la explicación (pasos 2-5) AL FINAL, en el último mensaje, para
+que me quede abajo de todo y a la vista. En el mismo turno:
 - confirmá que `material/tanda.txt` quedó vacío;
 - actualizá `GUIA.md` con la sesión en FORMATO CORTO (5-8 bullets,
   máx ~15 líneas) y el INICIO RÁPIDO, incluida la línea

@@ -8,19 +8,18 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: Platzi clase 04 completa + PDF "Guía de
-  Markdown para Obsidian" (material/): nivel 01 y pág. 8
-- Última tanda: Sesión #03 (2026-11-11, en obs-s03)
-- PRÓXIMA SESIÓN: `/rename obs-s04`
+- Último punto estudiado: Platzi clase 06 completa (carpetas, PARA,
+  bandeja); antes, clases 03-05 y PDF de Markdown nivel 01
+- Última tanda: Sesión #05 (2026-11-11, en obs-s04)
+- PRÓXIMA SESIÓN: `/rename obs-s05`
   (sale SIEMPRE de esta línea, no se calcula: contador distinto al de
   las tandas. Claude la actualiza al cerrar.)
-- Próximo material: Platzi clase 05 (y 01-02 si no se vieron: la 02
-  trae el repo de Cerebro)
-- Prácticas pendientes: c01, c02, q01 (estados y repasos: EJERCICIOS.md)
+- Próximo material: Platzi clase 07 (y 01-02 si no se vieron)
+- Prácticas pendientes: c01, c02, q01, c03, c04 (estados y repasos: EJERCICIOS.md)
 - Último triage (`/pendientes`): nunca todavía · Último examen: nunca
-- Entorno (2026-11-10): Obsidian 1.14.4, nvim 0.12.6 y herramientas ✅ ·
-  markdownlint-cli2 ❌ (F3) · ~/Proyectos/Cerebro ❌ (lo crea c01) ·
-  repo privado Ander0296/Cerebro ✅ (lo sube /cierre)
+- Entorno: Obsidian 1.14.4 EN ESPAÑOL, nvim 0.12.6 ✅ · markdownlint ❌ (F3) ·
+  Cerebro ✅ (2026-11-11; /cierre la sube al repo privado) · Sync Estándar
+  con descuento de estudiante aprobado: al tenerlo andando, ajustar la regla de git
 
 ## VOCABULARIO (solo si el material está en otro idioma; una fila por término nuevo)
 
@@ -32,6 +31,13 @@ Prácticas: ver EJERCICIOS.md.
 | Graph view                           | vista gráfica (grafo) | mapa: punto = nota, línea = enlace |
 | Live Preview                         | vista previa en vivo | oculta la sintaxis salvo donde está el cursor |
 | File over app                        | archivo sobre aplicación | tus notas son archivos tuyos que sobreviven a la app |
+| Search                               | búsqueda | busca texto DENTRO de todas las notas, con filtros |
+| Quick switcher (`Ctrl+O`)            | cambiador rápido | salta a una nota por su NOMBRE |
+| Bookmarks                            | marcadores | accesos directos a notas; la nota no se mueve |
+| Split right / Split down             | dividir a la derecha / abajo | dos notas a la vez en la misma ventana |
+| Default location for new notes       | ubicación por defecto para notas nuevas | en Files and links: dónde cae cada nota nueva |
+| Inbox                                | bandeja de entrada | carpeta donde cae lo capturado hasta procesarlo |
+| Move file to...                      | mover archivo a... | cambia la nota de carpeta sin romper sus enlaces |
 
 ============================================================
 (ACÁ VAN LAS SESIONES — Claude agrega la SESIÓN #01 en la primera
@@ -86,6 +92,37 @@ SESIÓN #03 — 2026-11-11 — PDF "Guía de Markdown para Obsidian" (recurso de
   `Ctrl+E` en modo normal lo toma Vim (q01, Parte B). Niveles 02-05: PENDIENTES.md.
 - PRÁCTICAS CREADAS: q01 (las preguntas de chequeo, diferidas a pedido)
 - PRÓXIMO PASO: c01 → c02 → q01; material: clase 05.
+
+SESIÓN #04 — 2026-11-11 — Platzi clase 05: la interfaz (búsqueda, marcadores, divisiones) (clase 05 completa, ~3 min; 3 de 16)
+- Search (lupa) busca texto DENTRO de las notas, con filtros ≠ `Ctrl+O`,
+  que salta por NOMBRE. Los operadores de búsqueda llegan más adelante.
+- Bookmarks = accesos directos (renombrables, en grupos) a las notas
+  activas. La nota NO se mueve de su carpeta.
+- El grafo se abre como una pestaña más (contexto; ya visto en la #01).
+- Pestañas y divisiones: arrastrar una pestaña a un costado o abajo da
+  dos notas a la vez. Uso real: fuente a un lado y nota propia al otro (F2).
+- Con teclado: `Ctrl+P` (paleta) + "Bookmark..." / "Split right" · lupa
+  con `Ctrl+Shift+F` · OJO: `Ctrl+W` cierra la pestaña (a verificar en c03).
+- Nota del profe: transcripción en vivo; le faltan segundos al comienzo
+  y salta de 1:44 a 2:40 (las dos cosas, cubiertas igual: arrastraba paneles).
+- PRÁCTICAS CREADAS: c03
+- PRÓXIMO PASO: clase 06.
+
+SESIÓN #05 — 2026-11-11 — Platzi clase 06: ordenar con carpetas y PARA (clase 06 completa; 4 de 16)
+- Carpetas = una de 3 formas de ordenar (las otras, más adelante). Una nota
+  vive en UNA carpeta pero se enlaza desde MUCHAS: pocas carpetas, muchos enlaces.
+- PARA ordena por qué tan accionable es algo: Proyectos (meta y fin) ·
+  Áreas (responsabilidad sin fin) · Recursos (interés) · Archivo (inactivo).
+- Prefijos 00-04 fijan el orden del explorador. 00 = bandeja: todo cae ahí
+  y después se procesa (capturar → bandeja → procesar).
+- Files and links → Default location for new notes → carpeta indicada = bandeja.
+  `[[nueva]]` + clic también cae en la bandeja.
+- Mover (Move file to...) no rompe enlaces: Obsidian enlaza por nombre.
+- Con teclado: `Ctrl+N` nueva · `Ctrl+P` "Move current file to another folder"
+  · "Reveal current file in navigation" · `Ctrl+,` ajustes.
+- Nota del profe: el curso pone "IA" como Área; en el PARA de Forte un tema
+  de interés es Recurso. Temas visuales: contexto. Huecos 0:00 y 3:00-3:58 cubiertos igual.
+- PRÁCTICAS CREADAS: c04 · PRÓXIMO PASO: clase 07.
 
 # ============================================================
 # FORMATO DE CADA SESIÓN (referencia para Claude — copiar y llenar)

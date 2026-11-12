@@ -51,6 +51,14 @@ PRÁCTICA q01 — ¿Dónde funciona cada Markdown? — [ ] pendiente (Parte B de
 Tipo: método-concepto
 Arranque: ejercicios/q01-donde-funciona-cada-markdown.md | Si te trabás: Sesión #03 de GUIA.md | Checklist: ToDo/markdown.md
 
+PRÁCTICA c03 — Moverte por tu bóveda: buscar, marcar y dividir — [ ] pendiente (después de c01)
+Tipo: nota en Cerebro
+Arranque: ejercicios/c03-buscar-marcar-dividir.md | Si te trabás: Sesión #04 de GUIA.md
+
+PRÁCTICA c04 — Tu estructura PARA y tu bandeja de entrada — [ ] pendiente (después de c01)
+Tipo: nota en Cerebro
+Arranque: ejercicios/c04-para-y-bandeja.md | Si te trabás: Sesión #05 de GUIA.md
+
 # ============================================================
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)
 # ============================================================

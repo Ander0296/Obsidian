@@ -16,3 +16,11 @@ s02 — Markdown en Obsidian:
 s03 — dónde funciona cada Markdown:
 - ==resaltado== es solo de Obsidian; **negrita** y *cursiva* funcionan en cualquier Markdown.
 - Un Enter suelto no corta el renglón: separá los párrafos con una línea en blanco.
+
+s04 — buscar, marcar y dividir:
+- Ctrl+O busca por nombre; la búsqueda encuentra palabras dentro de las notas.
+- Un marcador es un atajo: la nota sigue viviendo en su carpeta.
+
+s05 — PARA y la bandeja:
+- Proyectos terminan; áreas se mantienen; recursos interesan; el archivo guarda lo inactivo.
+- Toda nota nueva cae en la bandeja; después decido a qué carpeta va.
