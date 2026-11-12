@@ -8,8 +8,7 @@ Terminé una práctica. $ARGUMENTS
 Si no te dije las rutas o qué vi al verificarla, pedímelos antes de
 corregir: sin eso la corrección es a ciegas.
 - `cNN`: el trabajo está en `~/Proyectos/Cerebro`. Leé SOLO las notas
-  que nombré (podés mirar `git -C ~/Proyectos/Cerebro status` o
-  `diff` para ver qué cambió). Nunca crees ni edites nada ahí.
+  que nombré. Nunca crees ni edites nada ahí.
   Verificación esperada: enlaces que resuelven, enlaces entrantes,
   propiedades que se ven como propiedades, plantilla/base/nota diaria
   haciendo lo pedido.

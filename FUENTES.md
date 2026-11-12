@@ -39,7 +39,7 @@ Conoce Obsidian y cómo funciona
 
 - [ ] 01 Obsidian: crea tu segundo cerebro con notas enlazadas (2:36)
 - [ ] 02 Crea tu bóveda en Obsidian y sincronízala gratis (1:54) ← acá
-      nace `~/Proyectos/Cerebro`, con su repo privado
+      nace `~/Proyectos/Cerebro` (hoy con Obsidian Sync)
 - [ ] 03 Cómo el grafo de Obsidian conecta tus notas (4:00)
 - [ ] 04 Markdown en Obsidian: títulos, negritas y Wiki Links (5:57)
 - [ ] 05 Buscar, marcar y comparar notas en Obsidian (2:18)

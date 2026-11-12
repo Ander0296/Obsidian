@@ -23,12 +23,8 @@ Cerramos el día:
    y si pasa: `git add` + `git commit` + `git push` sin preguntarme (el
    OK ya está dado). Mostrame qué archivos subieron y con qué mensaje,
    y confirmame en una línea que subió (o pegame el error tal cual).
-6. Guardá y subí también CEREBRO (`~/Proyectos/Cerebro`), siguiendo
-   "Cerebro en el cierre" de la regla de git de CLAUDE.md: chequear
-   que el repo sea PRIVADO, pull + add + commit + push sin
-   preguntarme, y mostrarme solo la lista de archivos que subieron
-   (nunca su contenido).
-7. Dame el resumen del día en 5 líneas.
+6. Dame el resumen del día en 5 líneas. (Cerebro no se toca: lo
+   sincroniza Obsidian Sync.)
 
 Cerrá con el bloque `▶ SIGUE` para la próxima vez que abra Claude. Si se
 cumple algún disparador de `/examen`, dejalo propuesto AHÍ (para arrancar la

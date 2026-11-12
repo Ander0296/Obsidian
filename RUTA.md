@@ -17,14 +17,14 @@ LLEGAR.
 - Una fuente principal por fase: nada de juntar cinco a la vez.
 - Los repasos espaciados (evolucionan a integradores, no desaparecen).
 - git de ESTE repo lo maneja el profe: pull al abrir, commit + push al
-  cerrar. El git de Cerebro es mío.
+  cerrar. Cerebro no usa git: lo sincroniza Obsidian Sync (PCs y cel).
 - Todo en español; lo citado en otro idioma, traducido al lado.
 
 ## FASE 1 — Fundamentos: Obsidian + Markdown + modo Vim (⬅ FASE ACTUAL)
 
 Material: ★ Platzi, Curso de Obsidian, clases 01-13 + ayuda oficial en
 español + tutorial de CommonMark. Modo Vim activado desde el día 1.
-- Clase 02: nace `~/Proyectos/Cerebro` con su repo privado (lo creo yo).
+- Clase 02: nace `~/Proyectos/Cerebro` (lo creo yo), con Obsidian Sync.
 - Cada clase se vuelve práctica en MI bóveda, con mi contenido real.
 Termina cuando: clases 01-13 vistas, Cerebro existe con estructura,
 plantillas, nota diaria y al menos una base funcionando, pendientes en
@@ -50,7 +50,6 @@ Material: ★ obsidian.nvim (fork comunitario `obsidian-nvim`), extra
 markdownlint-cli2), Vimrc Support, CLI oficial de Obsidian.
 - La config la escribo yo en `~/.config/nvim`, con las reglas de ese
   repo. Acá queda solo lo aprendido.
-- Se decide cómo automatizar el commit diario de Cerebro.
 Termina cuando: una semana entera de notas diarias escritas 100% desde
 nvim, con markdownlint sin advertencias.
 
@@ -72,4 +71,3 @@ Termina cuando (condición de victoria):
   gusta: se aprende más).
 - Recursos y herramientas de F3 y F4 (cambian rápido; se busca lo
   vigente).
-- Cómo se automatiza el git de Cerebro.

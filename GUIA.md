@@ -17,9 +17,8 @@ Prácticas: ver EJERCICIOS.md.
 - Próximo material: Platzi clase 07 (y 01-02 si no se vieron)
 - Prácticas pendientes: c01, c02, q01, c03, c04 (estados y repasos: EJERCICIOS.md)
 - Último triage (`/pendientes`): nunca todavía · Último examen: nunca
-- Entorno: Obsidian 1.14.4 EN ESPAÑOL, nvim 0.12.6 ✅ · markdownlint ❌ (F3) ·
-  Cerebro ✅ (2026-11-11; /cierre la sube al repo privado) · Sync Estándar
-  con descuento de estudiante aprobado: al tenerlo andando, ajustar la regla de git
+- Entorno: Obsidian 1.15.0 (idioma a confirmar), nvim 0.12.6 ✅ · markdownlint ❌ (F3) ·
+  Cerebro ✅ con Obsidian Sync Plus E2E, sin git (2026-11-12; faltan cel y otro PC)
 
 ## VOCABULARIO (solo si el material está en otro idioma; una fila por término nuevo)
 

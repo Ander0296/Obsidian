@@ -19,17 +19,7 @@ elif ! printf '%s' "$salida" | grep -q 'Already up to date\|Ya está actualizado
   jq -n '{systemMessage: "git pull: se bajaron cambios del otro PC."}'
 fi
 
-# Cerebro (la bóveda): también se trae al abrir, porque /cierre la sube desde
-# cualquiera de los dos PCs. Solo si ya es repo y tiene historia remota.
-CEREBRO="$HOME/Proyectos/Cerebro"
-if git -C "$CEREBRO" rev-parse --is-inside-work-tree >/dev/null 2>&1 &&
-   git -C "$CEREBRO" ls-remote --exit-code --heads origin >/dev/null 2>&1; then
-  salida=$(git -C "$CEREBRO" pull --rebase --autostash 2>&1)
-  if [ $? -ne 0 ]; then
-    jq -n --arg s "$salida" '{systemMessage: ("git pull de Cerebro falló — revisalo antes de escribir notas:\n" + $s)}'
-  elif ! printf '%s' "$salida" | grep -q 'Already up to date\|Ya está actualizado'; then
-    jq -n '{systemMessage: "git pull: se bajaron notas de Cerebro del otro PC."}'
-  fi
-fi
+# Cerebro (la bóveda) NO pasa por git: la sincroniza Obsidian Sync, y la
+# ayuda oficial desaconseja mezclarlo con otro sistema de sincronización.
 
 exit 0

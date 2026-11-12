@@ -8,8 +8,8 @@ contenido; Markdown bien escrito. El material de cada fase está en
 
 **El curso y la bóveda van separados**, como el proyecto Vim y
 `~/.config/nvim`: este repo (público) registra lo que aprendo; mi
-cerebro vive en `~/Proyectos/Cerebro`, con su propio repo privado,
-y lo escribo todo yo.
+cerebro vive en `~/Proyectos/Cerebro`, sincronizado con Obsidian Sync
+(PCs y celular), y lo escribo todo yo.
 
 Sistema de estudio con Claude Code como profesor particular: yo le paso
 el material por tandas (texto de un libro, pantallazos, docs...), él lo
@@ -32,7 +32,7 @@ profe me dice cuál sigue. Tampoco escribo comandos de git: los hace él.
 
 ```
 ~/Proyectos/
-├── Cerebro/         MI BÓVEDA (repo privado aparte). Acá hago las
+├── Cerebro/         MI BÓVEDA (Obsidian Sync, sin git). Acá hago las
 │                    prácticas cNN; Claude solo la LEE para corregir
 └── Obsidian/        este repo: el curso
     (sigue abajo)
