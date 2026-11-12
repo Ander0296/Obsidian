@@ -11,14 +11,14 @@ Prácticas: ver EJERCICIOS.md.
 - Último punto estudiado: Platzi clase 06 completa (carpetas, PARA,
   bandeja); antes, clases 03-05 y PDF de Markdown nivel 01
 - Última tanda: Sesión #05 (2026-11-11, en obs-s04)
-- PRÓXIMA SESIÓN: `/rename obs-s05`
+- PRÓXIMA SESIÓN: `/rename obs-s06`
   (sale SIEMPRE de esta línea, no se calcula: contador distinto al de
   las tandas. Claude la actualiza al cerrar.)
 - Próximo material: Platzi clase 07 (y 01-02 si no se vieron)
 - Prácticas pendientes: c01, c02, q01, c03, c04 (estados y repasos: EJERCICIOS.md)
 - Último triage (`/pendientes`): nunca todavía · Último examen: nunca
-- Entorno: Obsidian 1.15.0 (idioma a confirmar), nvim 0.12.6 ✅ · markdownlint ❌ (F3) ·
-  Cerebro ✅ con Obsidian Sync Plus E2E, sin git (2026-11-12; faltan cel y otro PC)
+- Entorno: Obsidian 1.15.0 EN ESPAÑOL, nvim 0.12.6 ✅ · markdownlint ❌ (F3) ·
+  Cerebro ✅ con Obsidian Sync Plus E2E, sin git (2026-11-12; PC + cel ✅, falta el otro PC)
 
 ## VOCABULARIO (solo si el material está en otro idioma; una fila por término nuevo)
 
