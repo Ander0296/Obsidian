@@ -304,8 +304,11 @@ por el usuario. Cada tipo tiene su propia numeración.
   final sin pasos (lo mismo, solo) · "Si te trabás" · prompt de
   entrega. Contenido NEUTRO de relleno (tema fijo: café) con nombres
   de notas fijados por el enunciado, así Claude sabe qué leer. El
-  usuario tipea todo; Claude no da texto largo para copiar: a lo sumo
-  "una o dos frases tuyas sobre el tema". Nombres de menús en español;
+  usuario NO inventa contenido (pedido explícito, 2026-11-12): el
+  enunciado le da el texto corto exacto a tipear (incluidas las frases
+  de contexto de los enlaces), o vale cualquier relleno. En la
+  corrección de un `gNN` se evalúa SOLO el manejo, nunca la calidad del
+  contenido. Nombres de menús en español;
   si Claude no está seguro del texto exacto, lo dice en el paso.
 - `mdNN`: el texto de partida es material de entrada (como una kata),
   no la solución: no trae el Markdown resuelto.

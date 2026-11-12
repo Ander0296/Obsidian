@@ -59,7 +59,9 @@ Arranque: ejercicios/g04-carpetas-para-y-bandeja.md | Si te trabás: Sesión #05
 # ============================================================
 
 REPASO — PRÁCTICA g01 (r1) — programado: 2026-11-16 — [ ] pendiente
-Arranque: ejercicios/repasos/... (desde cero, sin mirar el original; foco: enlaces con contexto de RELACIÓN)
+Arranque: ejercicios/repasos/... (desde cero, sin mirar el original; foco: atajo de seguir enlace; el texto de las notas lo da el enunciado)
+
+Nota para g02-g04: donde el arranque pide "una frase tuya", vale cualquier relleno; no se corrige el contenido, solo el manejo.
 
 # ============================================================
 # CONCEPTOS DOMINADOS (entran al graduarse una práctica con r3 bien)

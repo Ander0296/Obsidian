@@ -10,5 +10,5 @@ repaso o para un RE-ESTUDIO). Lo vivo está en EJERCICIOS.md.
 PRÁCTICA g01 — Notas y enlaces: crear, enlazar, navegar — [x] completada (2026-11-12)
 Tipo: guiada | Arranque: ejercicios/g01-notas-y-enlaces.md | Sesión #01
 Bien: manejo completo (crear, enlazar eligiendo, Enlaces entrantes, desafío solo; los 3 enlaces resuelven).
-Mal: el contexto de los enlaces describe una nota, no la RELACIÓN ("porque es un tipo de preparación"), o falta ("…del café. [[Molienda]]").
-Por qué: el panel de enlaces entrantes muestra solo esa frase; si no dice por qué se relacionan, no le sirve a quien la lee. Nombre fijado (Espresso) quedó "Espreso".
+Mal: paso 7, anotó Ctrl+P (la paleta) en vez del atajo propio del comando "Seguir enlace bajo el cursor".
+Por qué: cada comando muestra su atajo a la DERECHA de su nombre en la paleta; si no hay nada, no tiene. Nombre fijado (Espresso) quedó "Espreso" (resuelve igual).
