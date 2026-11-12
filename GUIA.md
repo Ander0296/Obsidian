@@ -19,7 +19,8 @@ Prácticas: ver EJERCICIOS.md.
 - Prácticas pendientes: c01, c02, q01 (estados y repasos: EJERCICIOS.md)
 - Último triage (`/pendientes`): nunca todavía · Último examen: nunca
 - Entorno (2026-11-10): Obsidian 1.14.4, nvim 0.12.6 y herramientas ✅ ·
-  markdownlint-cli2 ❌ (F3) · ~/Proyectos/Cerebro ❌ (lo crea c01)
+  markdownlint-cli2 ❌ (F3) · ~/Proyectos/Cerebro ❌ (lo crea c01) ·
+  repo privado Ander0296/Cerebro ✅ (lo sube /cierre)
 
 ## VOCABULARIO (solo si el material está en otro idioma; una fila por término nuevo)
 

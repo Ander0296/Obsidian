@@ -198,9 +198,12 @@ sus notas (ni enteras ni en pedazos). Misma relación que proyecto Vim ↔
 - Claude SÍ lee Cerebro para corregir (permiso en
   `.claude/settings.json`), pero solo las notas que el usuario nombra
   en `/entrega` o `/repaso`, nunca la bóveda entera "para ver".
-- Git de Cerebro: lo maneja el usuario. Claude solo corre lecturas
-  (`git -C ~/Proyectos/Cerebro status|log|diff`). Nunca add, commit
-  ni push ahí. Cómo automatizar su commit diario se decide en F3/F4.
+- Git de Cerebro (cambiado a pedido del usuario el 2026-11-11): el
+  contenido sigue siendo 100% del usuario, pero el GUARDADO lo hace
+  Claude. Pull al abrir la sesión (hook) y add + commit + push en cada
+  `/cierre` (ver "Cerebro en el cierre" en la regla de git). Repo:
+  `Ander0296/Cerebro`, PRIVADO. Fuera de eso, Claude solo corre
+  lecturas (`git -C ~/Proyectos/Cerebro status|log|diff`).
 - En ESTE repo (PÚBLICO) queda solo lo APRENDIDO: guía, tarjetas,
   checklists. Nunca contenido personal de las notas.
 - Desde F3, la config de obsidian.nvim vive en `~/.config/nvim` y sigue
@@ -300,7 +303,7 @@ por el usuario. Cada tipo tiene su propia numeración.
 | git, gh, jq (candado), ttyper, anki | `command -v git gh jq ttyper anki` | ✅ |
 | pdftotext, pandoc | `command -v pdftotext pandoc` | ✅ |
 | markdownlint-cli2 | `command -v markdownlint-cli2` | ❌ llega en F3 (extra `lang.markdown` de LazyVim, vía Mason) |
-| `~/Proyectos/Cerebro` | existe y tiene `.git` | ❌ nace en la clase 02 |
+| `~/Proyectos/Cerebro` | existe y tiene `.git` | ❌ la carpeta la crea c01 · repo privado `Ander0296/Cerebro` en GitHub ✅ (2026-11-11, vacío) |
 
 Nombres fijos: ttyper `~/.config/ttyper/texts/obsidian-sNN.txt` (en
 minúsculas); Anki `#deck:Obsidian` y `#tags:obsidian`; Engram
@@ -695,6 +698,25 @@ grande):
 3. Mostrar en el chat, corto, qué archivos subieron y con qué mensaje.
 4. Confirmar en una línea que subió, o pegar el error tal cual si falló.
 
+**Cerebro en el cierre** (SOLO en `/cierre`, no en `/cambio`; pedido
+del usuario el 2026-11-11). Después de subir este repo:
+1. Si `~/Proyectos/Cerebro` no existe todavía: decirlo en una línea y
+   seguir (no se crea: la crea el usuario desde Obsidian).
+2. Si existe pero no tiene `.git` (primera vez): `git init -b main` +
+   `git remote add origin git@github.com:Ander0296/Cerebro.git`.
+3. Chequeo de seguridad de Cerebro: `gh repo view Ander0296/Cerebro
+   --json visibility` tiene que decir `PRIVATE`. Si no, PARAR y
+   avisar: son notas personales y un push a un repo público no se
+   deshace.
+4. `git -C ~/Proyectos/Cerebro pull --rebase --autostash` (si ya tiene
+   historia remota), después `add -A` + `commit -m "docs: notas del
+   AAAA-MM-DD"` + `push -u origin main`, SIN PREGUNTAR. Si no hay
+   cambios, decirlo en una línea.
+5. Mostrar solo la LISTA de archivos que subieron (`git status
+   --short`), nunca su contenido: Claude no lee la bóveda "para ver".
+6. Conflicto en el pull: no se resuelve solo. Se explica y el usuario
+   decide.
+
 **Chequeo de seguridad — ANTES de todo commit, sin excepción:**
 
 ```bash
@@ -745,9 +767,10 @@ Si algo de eso hace falta, se explica y se espera la decisión.
   al completarse) sin discutirlo, y NO edita ese archivo para arreglar
   el prompt: sigue siendo el lugar de trabajo del usuario.
 - Claude NO ejecuta bash salvo pedido explícito. Excepciones: los
-  comandos de git de la regla de arriba, que son parte de su trabajo,
-  las LECTURAS de git en Cerebro (`git -C ~/Proyectos/Cerebro
-  status|log|diff`) para corregir, y la LECTURA de los documentos de
+  comandos de git de la regla de arriba, que son parte de su trabajo
+  (incluido el guardado de Cerebro en `/cierre`), las LECTURAS de git
+  en Cerebro (`git -C ~/Proyectos/Cerebro status|log|diff`) para
+  corregir, y la LECTURA de los documentos de
   `material/` (`eza material/`, `pdftotext -layout`).
 - El usuario puede interrumpir con dudas: se responden con calma y
   detalle antes de seguir.
