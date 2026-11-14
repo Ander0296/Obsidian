@@ -24,3 +24,11 @@ s04 — buscar, marcar y dividir:
 s05 — PARA y la bandeja:
 - Proyectos terminan; áreas se mantienen; recursos interesan; el archivo guarda lo inactivo.
 - Toda nota nueva cae en la bandeja; después decido a qué carpeta va.
+
+s06 — etiquetas, enlaces entrantes y mapas:
+- Los enlaces entrantes muestran qué notas apuntan a la nota que tengo abierta.
+- tag:#pendiente busca la etiqueta; un mapa de contenido es una nota llena de [[enlaces]].
+
+s07 — citas, enlaces web, callouts y código:
+- Un callout es una cita que empieza así: > [!tip] Título del recuadro.
+- [texto visible](https://url): corchetes para el texto, paréntesis para la dirección web.

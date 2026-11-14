@@ -42,7 +42,8 @@ deuda falsa que se relee para siempre y no se salda nunca.
   HTML, iframes, URIs `obsidian://`) y nivel 05 (LaTeX, Mermaid,
   búsquedas y Bases incrustadas). Rescate: cada pieza se explica
   cuando llega la clase de Platzi que la toca; lo que el curso no
-  cubra, desde el PDF al cerrar F1.
+  cubra, desde el PDF al cerrar F1. Ya rescatado: etiquetas simples
+  (Sesión #06); callouts y bloques de código (Sesión #07).
 
 # ============================================================
 # DADAS DE BAJA (decisión tomada, no vuelven)

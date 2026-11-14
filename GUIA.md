@@ -8,15 +8,16 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: Platzi clase 06 completa (carpetas, PARA,
-  bandeja); antes, clases 03-05 y PDF de Markdown nivel 01
-- Última tanda: Sesión #05 (2026-11-11, en obs-s04)
-- PRÓXIMA SESIÓN: `/rename obs-s07`
+- Último punto estudiado: Platzi clase 08 completa (citas, enlaces web,
+  callouts, código): cerrada la unidad 06-08; antes, clases 03-07 y PDF nivel 01
+- Última tanda: Sesión #07 (2026-11-14, en obs-s07)
+- PRÓXIMA SESIÓN: `/rename obs-s08`
   (sale SIEMPRE de esta línea, no se calcula: contador distinto al de
   las tandas. Claude la actualiza al cerrar.)
-- Próximo material: Platzi clase 07 (y 01-02 si no se vieron)
-- Prácticas: g02 [~] (rehecha de 4 pasos) → g03 → g04 (g01 ✅ 2026-11-12, r1 el 11-16), guiadas y cortas (reemplazan a c01-c04 y q01
-  desde 2026-11-12; Cerebro = bóveda de práctica) · estados: EJERCICIOS.md
+- Próximo material: Platzi clase 09 (plantillas; y 01-02 si no se vieron)
+- Prácticas: g02 [~] → g03 → g04 → g05 → g06 (g01 ✅ 2026-11-12, r1 el 11-16), guiadas y cortas.
+  OJO: desde 2026-11-14 Cerebro = esqueleto del profe; las notas del café ya no
+  existen y g02-g05 las usan (decisión abierta en EJERCICIOS.md)
 - Último triage (`/pendientes`): nunca todavía · Último examen: nunca
 - Entorno: Obsidian 1.15.0 EN ESPAÑOL, nvim 0.12.6 ✅ · markdownlint ❌ (F3) ·
   Cerebro ✅ con Obsidian Sync Plus E2E, sin git (2026-11-12; PC + cel ✅, falta el otro PC)
@@ -38,6 +39,16 @@ Prácticas: ver EJERCICIOS.md.
 | Default location for new notes       | ubicación por defecto para notas nuevas | en Files and links: dónde cae cada nota nueva |
 | Inbox                                | bandeja de entrada | carpeta donde cae lo capturado hasta procesarlo |
 | Move file to...                      | mover archivo a... | cambia la nota de carpeta sin romper sus enlaces |
+| Tag (`#palabra`)                     | etiqueta | rótulo que agrupa notas sin crear una nota |
+| Backlinks                            | enlaces entrantes | las notas que enlazan HACIA la nota abierta |
+| Outgoing links                       | enlaces salientes | los enlaces que salen DESDE la nota abierta |
+| Outline                              | esquema | los títulos de la nota como índice para saltar |
+| Map of Content (MOC)                 | mapa de contenido | nota hecha de enlaces: puerta de entrada a un tema |
+| Reading view                         | vista de lectura | la nota terminada: sin símbolos y sin poder editar |
+| Blockquote (`> `)                    | cita | párrafo citado, con una barra a la izquierda |
+| Callout (`> [!tipo]`)                | recuadro destacado | cita con tipo: recuadro de color con ícono y título |
+| Code block                           | bloque de código | código entre dos líneas de tres acentos graves |
+| External link                        | enlace externo | `[texto](url)`: lleva a una página web |
 
 ============================================================
 (ACÁ VAN LAS SESIONES — Claude agrega la SESIÓN #01 en la primera
@@ -123,6 +134,43 @@ SESIÓN #05 — 2026-11-11 — Platzi clase 06: ordenar con carpetas y PARA (cla
 - Nota del profe: el curso pone "IA" como Área; en el PARA de Forte un tema
   de interés es Recurso. Temas visuales: contexto. Huecos 0:00 y 3:00-3:58 cubiertos igual.
 - PRÁCTICAS CREADAS: c04 · PRÓXIMO PASO: clase 07.
+
+SESIÓN #06 — 2026-11-14 — Platzi clase 07: etiquetas y mapas de contenido (clase 07 completa; 5 de 16)
+- Etiqueta `#palabra` = rótulo que agrupa notas SIN crear una nota. Clic →
+  búsqueda `tag:#palabra`. Sin espacios, no solo números, no distingue mayúsculas.
+- Barra lateral derecha = lo que rodea a la nota abierta: Enlaces entrantes
+  (quién me enlaza) · salientes (a quién enlazo) · Etiquetas · Propiedades · Esquema.
+- Enlaces entrantes = índice que se arma solo: por eso enlazar vale la pena.
+- Mapa de contenido (MOC) = una NOTA de enlaces, puerta de entrada a un tema.
+  No es una función. Una nota entra en varios mapas (y en una sola carpeta).
+- Tres formas que conviven: carpeta (dónde vive) · etiqueta (estado o tipo) ·
+  enlace/mapa (de qué trata). Pocas carpetas, muchos enlaces.
+- Con teclado: `G` `o` línea al final · `Ctrl+Shift+F` + `tag:#x` · `Ctrl+P` +
+  "entrantes"/"esquema"/"etiquetas" (nombres exactos a verificar en g05).
+- Nota del profe: `.obsidian` NO es temporal, es la configuración de la bóveda
+  (no borrar ni pisar). El usuario pegó el zip-esqueleto en Cerebro ese mismo
+  día y borró lo anterior (se fueron las notas del café).
+- Dudas: enlaces entrantes NO quedó (propuso buscar la palabra; no sabía que
+  la lista la arma Obsidian). Pidió verlo después: mostrarlo en la bóveda.
+- Ejercicios del material: ninguno · PRÁCTICAS CREADAS: g05 · PRÓXIMO PASO: clase 08.
+
+SESIÓN #07 — 2026-11-14 — Platzi clase 08: citas, enlaces web, callouts y código (clase 08 completa; 6 de 16; cierra la unidad 06-08)
+- Vista previa en vivo (por defecto) muestra el resultado y, con el cursor
+  encima, la sintaxis. Vista de lectura = nota terminada, sin símbolos ni edición.
+- Cita: `> ` al inicio de la línea. Dos citas se separan con una línea en blanco.
+- Enlace web: `[texto visible](url)`, corchetes primero. Pegar la URL sola
+  también enlaza (en CommonMark estricto iría entre `< >`).
+- Callout = cita cuya primera línea es `> [!tipo] Título`: 13 tipos, plegable
+  con `-`/`+`, anidable con `> >`. Propio de Obsidian: afuera queda como cita.
+- Bloque de código: tres acentos graves + lenguaje arriba, tres abajo; en línea,
+  uno a cada lado. CommonMark; el color depende del programa.
+- Contexto: LaTeX, PDF incrustado y Mermaid (PDF niveles 04-05, diferidos).
+- Con teclado: `I> ` + `Esc` cita una línea, `j.` repite · `Ctrl+K` enlace ·
+  `Ctrl+P` + "callout"/"código" · `Ctrl+E` lectura (a verificar en g06).
+- Nota del profe: el `==🔴texto==` de color del PDF no es de Obsidian de fábrica:
+  verificar en la nota-guía del esqueleto. Falta la frase inicial (cubierto igual).
+- Dudas: orden de `[texto](url)`, bien · Ejercicios del material: ninguno
+- PRÁCTICAS CREADAS: g06 · PRÓXIMO PASO: clase 09.
 
 # ============================================================
 # FORMATO DE CADA SESIÓN (referencia para Claude — copiar y llenar)

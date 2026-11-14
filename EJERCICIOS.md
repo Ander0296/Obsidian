@@ -42,6 +42,14 @@ Arranque: ejercicios/repasos/... (desde cero, sin mirar el original)
 (2026-11-12: c01-c04 y q01 se dieron de baja a pedido del usuario; se
 rehacen desde cero como prácticas GUIADAS gNN, en orden.)
 
+(2026-11-14: el usuario vació Cerebro y pegó el esqueleto del profe, el
+zip de la clase 07. Las notas del café YA NO EXISTEN y PARA ya viene
+armado: g03-g05 las usan seguro, g02 a revisar. DECISIÓN ABIERTA:
+rehacerlas autocontenidas sobre la bóveda actual (recomendado; necesita
+pedido explícito porque toca ejercicios/) o restaurar las notas desde
+los archivos eliminados de Sync. g06 ya es autocontenida. Revisar además
+que el modo Vim siga activo, por si se pisó `.obsidian`.)
+
 PRÁCTICA g02 — Markdown básico — [~] en curso (rehecha corta el 2026-11-12)
 Tipo: guiada
 Arranque: ejercicios/g02-markdown-basico.md | Si te trabás: Sesiones #02-#03 de GUIA.md | Checklist: ToDo/markdown.md
@@ -55,6 +63,15 @@ Arranque: ejercicios/g03-buscar-marcar-dividir.md | Si te trabás: Sesión #04 d
 PRÁCTICA g04 — Carpetas, PARA y bandeja — [ ] pendiente (después de g03)
 Tipo: guiada
 Arranque: ejercicios/g04-carpetas-para-y-bandeja.md | Si te trabás: Sesión #05 de GUIA.md
+
+PRÁCTICA g05 — Etiquetas, panel derecho y mapa de contenido — [ ] pendiente (después de g04)
+Tipo: guiada
+Arranque: ejercicios/g05-etiquetas-panel-y-mapa.md | Si te trabás: Sesión #06 de GUIA.md | Checklist: ToDo/markdown.md
+Pendiente además: mostrarle Enlaces entrantes en la bóveda (duda de la Sesión #06, pidió verlo después).
+
+PRÁCTICA g06 — Citas, enlaces web, callouts y código — [ ] pendiente (autocontenida: se puede hacer ya)
+Tipo: guiada
+Arranque: ejercicios/g06-citas-enlaces-callouts-codigo.md | Si te trabás: Sesión #07 de GUIA.md | Checklist: ToDo/markdown.md
 
 # ============================================================
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)
