@@ -32,3 +32,7 @@ s06 — etiquetas, enlaces entrantes y mapas:
 s07 — citas, enlaces web, callouts y código:
 - Un callout es una cita que empieza así: > [!tip] Título del recuadro.
 - [texto visible](https://url): corchetes para el texto, paréntesis para la dirección web.
+
+s08 — propiedades y plantillas:
+- Las propiedades van entre dos líneas --- al principio: autor: Cervantes, tipo: libro.
+- Una plantilla guarda la estructura; {{title}} y {{date}} se reemplazan al insertarla.

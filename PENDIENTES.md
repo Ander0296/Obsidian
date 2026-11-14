@@ -43,7 +43,8 @@ deuda falsa que se relee para siempre y no se salda nunca.
   búsquedas y Bases incrustadas). Rescate: cada pieza se explica
   cuando llega la clase de Platzi que la toca; lo que el curso no
   cubra, desde el PDF al cerrar F1. Ya rescatado: etiquetas simples
-  (Sesión #06); callouts y bloques de código (Sesión #07).
+  (Sesión #06); callouts y bloques de código (Sesión #07); propiedades
+  YAML, pág. 4 completa (Sesión #08).
 
 # ============================================================
 # DADAS DE BAJA (decisión tomada, no vuelven)

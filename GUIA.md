@@ -8,16 +8,15 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: Platzi clase 08 completa (citas, enlaces web,
-  callouts, código): cerrada la unidad 06-08; antes, clases 03-07 y PDF nivel 01
-- Última tanda: Sesión #07 (2026-11-14, en obs-s07)
-- PRÓXIMA SESIÓN: `/rename obs-s08`
+- Último punto estudiado: Platzi clase 09 completa (propiedades y plantillas) +
+  PDF pág. 4 (propiedades YAML); antes, clases 03-08 y PDF nivel 01
+- Última tanda: Sesión #08 (2026-11-14, en obs-s08)
+- PRÓXIMA SESIÓN: `/rename obs-s09`
   (sale SIEMPRE de esta línea, no se calcula: contador distinto al de
   las tandas. Claude la actualiza al cerrar.)
-- Próximo material: Platzi clase 09 (plantillas; y 01-02 si no se vieron)
-- Prácticas: g02 [~] → g03 → g04 → g05 → g06 (g01 ✅ 2026-11-12, r1 el 11-16), guiadas y cortas.
-  OJO: desde 2026-11-14 Cerebro = esqueleto del profe; las notas del café ya no
-  existen y g02-g05 las usan (decisión abierta en EJERCICIOS.md)
+- Próximo material: Platzi clase 10 (y 01-02 si no se vieron)
+- Prácticas: g02 [~] → g03 → g04 → g05 → g06 → g07 (g01 ✅ 2026-11-12, r1 el 11-16), guiadas y cortas.
+  OJO: g02-g05 usan notas del café que ya no existen (decisión abierta en EJERCICIOS.md); g06-g07 no.
 - Último triage (`/pendientes`): nunca todavía · Último examen: nunca
 - Entorno: Obsidian 1.15.0 EN ESPAÑOL, nvim 0.12.6 ✅ · markdownlint ❌ (F3) ·
   Cerebro ✅ con Obsidian Sync Plus E2E, sin git (2026-11-12; PC + cel ✅, falta el otro PC)
@@ -49,6 +48,10 @@ Prácticas: ver EJERCICIOS.md.
 | Callout (`> [!tipo]`)                | recuadro destacado | cita con tipo: recuadro de color con ícono y título |
 | Code block                           | bloque de código | código entre dos líneas de tres acentos graves |
 | External link                        | enlace externo | `[texto](url)`: lleva a una página web |
+| Properties                           | propiedades | datos sobre la nota (`nombre: valor`) en un bloque al inicio del archivo |
+| YAML / frontmatter                   | bloque de metadatos | el texto entre dos `---` donde el archivo guarda las propiedades |
+| Template                             | plantilla | nota con una estructura lista para insertar en otras |
+| Alias (`aliases`)                    | alias | otro nombre con el que se puede enlazar la misma nota |
 
 ============================================================
 (ACÁ VAN LAS SESIONES — Claude agrega la SESIÓN #01 en la primera
@@ -171,6 +174,25 @@ SESIÓN #07 — 2026-11-14 — Platzi clase 08: citas, enlaces web, callouts y c
   verificar en la nota-guía del esqueleto. Falta la frase inicial (cubierto igual).
 - Dudas: orden de `[texto](url)`, bien · Ejercicios del material: ninguno
 - PRÁCTICAS CREADAS: g06 · PRÓXIMO PASO: clase 09.
+
+SESIÓN #08 — 2026-11-14 — Platzi clase 09: propiedades y plantillas + PDF pág. 4 (clase 09 completa; 7 de 16)
+- Propiedad = dato SOBRE la nota, con nombre y valor (`autor: Cervantes`). En el
+  archivo es un bloque YAML entre dos `---`, SIEMPRE desde la línea 1.
+- Tipos: texto, lista, número, casilla, fecha (AAAA-MM-DD), fecha y hora. Un nombre
+  tiene UN tipo en toda la bóveda. De fábrica: `tags`, `aliases`, `cssclasses`.
+- Etiqueta = sí/no ("es un libro"); propiedad = dato para filtrar (`[tipo:libro]`
+  en la búsqueda) y base de Bases. Un enlace dentro de una propiedad va entre comillas.
+- Plantilla = nota común con estructura reutilizable, guardada en la carpeta que
+  indica Ajustes → Plantillas (esqueleto: dentro de la de sistema, la 99).
+  "Insertar plantilla" la vuelca en la nota abierta y FUSIONA las propiedades.
+- `{{title}}`, `{{date}}`, `{{time}}` se reemplazan al insertar. Como valor de una
+  propiedad van entre comillas: sin ellas el panel las pisa (el "date null" del video).
+- Con teclado: `---` en la línea 1 abre el panel · `Ctrl+;` agrega propiedad ·
+  `Ctrl+P` + "plantilla" (sin atajo de fábrica). Nombres exactos: a verificar en g07.
+- Nota del profe: una propiedad `título` duplica el nombre del archivo; nombres de
+  propiedad siempre iguales (minúsculas, sin acentos); las plantillas, en modo fuente.
+- Dudas: chequeo sin contestar (por qué `tipo` viene fijo y `autor` vacío): retomarlo.
+- Ejercicios del material: ninguno · PRÁCTICAS CREADAS: g07 · PRÓXIMO PASO: clase 10.
 
 # ============================================================
 # FORMATO DE CADA SESIÓN (referencia para Claude — copiar y llenar)

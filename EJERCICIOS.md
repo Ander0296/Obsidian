@@ -73,12 +73,17 @@ PRÁCTICA g06 — Citas, enlaces web, callouts y código — [ ] pendiente (auto
 Tipo: guiada
 Arranque: ejercicios/g06-citas-enlaces-callouts-codigo.md | Si te trabás: Sesión #07 de GUIA.md | Checklist: ToDo/markdown.md
 
+PRÁCTICA g07 — Propiedades y plantillas — [ ] pendiente (autocontenida: se puede hacer ya)
+Tipo: guiada
+Arranque: ejercicios/g07-propiedades-y-plantillas.md | Si te trabás: Sesión #08 de GUIA.md
+Notas a leer en la entrega: `g07 café`, `Plantilla cata`, `g07 Huila`, `Plantilla tostador`, `g07 tostador`. Verificar ahí los nombres en español (modo fuente, mover, Plantillas) y `Ctrl+;`.
+
 # ============================================================
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)
 # ============================================================
 
 REPASO — PRÁCTICA g01 (r1) — programado: 2026-11-16 — [ ] pendiente
-Arranque: ejercicios/repasos/... (desde cero, sin mirar el original; foco: atajo de seguir enlace; el texto de las notas lo da el enunciado)
+Arranque: ejercicios/repasos/g01-r1-notas-y-enlaces.md (creado el 2026-11-14; desde cero, sin mirar el original; foco: atajo de seguir enlace). Notas a leer: `Té`, `Infusión`, `Tetera`.
 # ============================================================
 # CONCEPTOS DOMINADOS (entran al graduarse una práctica con r3 bien)
 # ============================================================
