@@ -44,3 +44,4 @@ estás dejando que otro encuentre tus errores por vos.
 ## Índice
 
 - [markdown.md](markdown.md) — títulos, énfasis, listas, tareas, separador y enlaces en Obsidian
+- [nota-diaria.md](nota-diaria.md) — configurar y comprobar la nota diaria (formato de fecha, carpeta, plantilla, abrir sola)

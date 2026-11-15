@@ -8,15 +8,15 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: Platzi clase 09 completa (propiedades y plantillas) +
-  PDF pág. 4 (propiedades YAML); antes, clases 03-08 y PDF nivel 01
-- Última tanda: Sesión #08 (2026-11-14, en obs-s08)
-- PRÓXIMA SESIÓN: `/rename obs-s09`
+- Último punto estudiado: Platzi clases 12-13 completas (lienzo, adjuntos,
+  complementos). TERMINADO el material de F1 (clases 03-13, PDF nivel 01 y pág. 4)
+- Última tanda: Sesión #11 (2026-11-15, en obs-s09)
+- PRÓXIMA SESIÓN: `/rename obs-s10`
   (sale SIEMPRE de esta línea, no se calcula: contador distinto al de
   las tandas. Claude la actualiza al cerrar.)
-- Próximo material: Platzi clase 10 (y 01-02 si no se vieron)
-- Prácticas: g02 [~] → g03 → g04 → g05 → g06 → g07 (g01 ✅ 2026-11-12, r1 el 11-16), guiadas y cortas.
-  OJO: g02-g05 usan notas del café que ya no existen (decisión abierta en EJERCICIOS.md); g06-g07 no.
+- Próximo material: ninguno pendiente de F1 (clases 01-02 opcionales; 14-16 van en F4)
+- Prácticas: g02 [~] → g03 → … → g10 (g01 ✅ 2026-11-12, r1 el 11-16). PLAN del usuario (11-15): curso terminado, ahora las prácticas.
+  OJO: g02-g05 usan notas del café que ya no existen (decisión abierta en EJERCICIOS.md); g06-g10 no.
 - Último triage (`/pendientes`): nunca todavía · Último examen: nunca
 - Entorno: Obsidian 1.15.0 EN ESPAÑOL, nvim 0.12.6 ✅ · markdownlint ❌ (F3) ·
   Cerebro ✅ con Obsidian Sync Plus E2E, sin git (2026-11-12; PC + cel ✅, falta el otro PC)
@@ -193,6 +193,71 @@ SESIÓN #08 — 2026-11-14 — Platzi clase 09: propiedades y plantillas + PDF p
   propiedad siempre iguales (minúsculas, sin acentos); las plantillas, en modo fuente.
 - Dudas: chequeo sin contestar (por qué `tipo` viene fijo y `autor` vacío): retomarlo.
 - Ejercicios del material: ninguno · PRÁCTICAS CREADAS: g07 · PRÓXIMO PASO: clase 10.
+
+SESIÓN #09 — 2026-11-15 — Platzi clase 10: nota diaria (clase 10 completa; 8 de 16)
+- Nota diaria = nota cuyo nombre es la fecha. "Abrir la nota de hoy" (cinta izquierda
+  o paleta) la abre y, si no existe, la CREA; nunca hay dos del mismo día.
+- Ajustes → Notas diarias: formato de fecha (es el nombre; de fábrica `YYYY-MM-DD`),
+  ubicación del archivo nuevo (carpeta de diario) y ubicación de la plantilla.
+- Plantilla del profe: fecha, foco del día, tareas, notas con la hora, lo que aprendí,
+  agradecimiento. La plantilla se copia SOLO al crear la nota.
+- Abrir sola: Ajustes → Archivos y enlaces → "Archivo predeterminado al abrir" = nota
+  diaria (otras opciones: último abierto, nueva nota, archivo específico).
+- Pareto: es la puerta de entrada del flujo diario (capturar sin decidir carpeta); cada
+  `[[enlace]]` escrito ahí deja en la otra nota un enlace entrante con la fecha.
+- Con teclado: `Ctrl+P` + "diaria" (hoy, anterior, siguiente; sin atajo de fábrica) ·
+  `Ctrl+P` + "hora" · `/Notas` + `o` para anotar. Nombres exactos: a verificar en g08.
+- Nota del profe: texto fijo en el formato va entre corchetes (`YYYY-MM-DD [diario]`),
+  si no sale deformado; año-mes-día ordena solo; el ajuste de abrir sola existe desde
+  la 1.11.4 (antes era un interruptor en Notas diarias). "Mi hija" del video = "mi IA".
+- Dudas: chequeo pendiente (plantilla editada vs nota ya creada + el de la Sesión #08).
+- Ejercicios del material: ninguno · PRÁCTICAS CREADAS: g08 · Checklist nuevo:
+  ToDo/nota-diaria.md · PRÓXIMO PASO: clase 11 (Bases).
+
+SESIÓN #10 — 2026-11-15 — Platzi clase 11: Bases y comandos de barra diagonal (clase 11 completa; 9 de 16)
+- Complementos principales (Ajustes) = funciones que Obsidian trae y se prenden o
+  apagan: Bases, Notas diarias, Plantillas, Comandos de barra diagonal.
+- Comandos de barra diagonal: al ESCRIBIR `/` (inicio de línea o tras un espacio) se
+  abre ahí la lista de la paleta; `Esc` o espacio la cierra. Contexto: es `Ctrl+P`.
+- Base = archivo `.base` que muestra notas en una tabla. NO guarda datos: es una
+  vista (una consulta guardada) sobre las propiedades de las notas.
+- Recién creada lista TODA la bóveda. "Filtrar" → añadir filtro (propiedad · es/no
+  es · valor) la achica; "Propiedades" elige las columnas (una propiedad = una columna).
+- Vive junto a las notas y se mueve como cualquiera; varias bases = varias vistas
+  de las mismas notas. Las notas nuevas que cumplen el filtro entran solas.
+- Pareto: Bases rinde solo con propiedades consistentes (mismo nombre y mismo valor
+  exacto); por eso el valor fijo va escrito en la plantilla.
+- Con teclado: `Ctrl+P` + "base" crea · `Ctrl+O` la abre · la tabla NO es el editor:
+  ahí no hay modo Vim · `/` en modo normal sigue siendo buscar. A verificar en g09.
+- Nota del profe: `.base` es texto (YAML), legible desde Neovim (F3); en español el
+  Quick switcher se llama "selector rápido"; editar una celda edita la nota.
+- Dudas: chequeo pendiente (valor distinto vs filtro; borrar la base).
+- Ejercicios del material: ninguno · PRÁCTICAS CREADAS: g09 · PRÓXIMO PASO: clases
+  12 (Canvas) y 13 (complementos); 14-16 en F4.
+
+SESIÓN #11 — 2026-11-15 — Platzi clases 12 y 13: lienzo, adjuntos y complementos (completas; 11 de 16; fin del material de F1)
+- Lienzo (Canvas) = pizarra en un archivo `.canvas`: tarjetas de texto (doble clic en
+  el fondo), notas de la bóveda e imágenes, unidas con flechas desde el borde. Contexto.
+- Una nota puesta en el lienzo ES la nota: editarla en la tarjeta la cambia en todos lados.
+- Adjunto = archivo que no es nota (imagen, PDF). Pegarlo o arrastrarlo crea el ARCHIVO
+  en la carpeta de adjuntos (Ajustes → Archivos y enlaces) y deja en la nota `![[archivo]]`.
+- `![[...]]` incrusta imagen, PDF u otra nota (nota maestra que junta notas cortas).
+  Borrar el archivo rompe el enlace; Obsidian avisa antes.
+- Complementos de la comunidad = código de terceros. Obsidian arranca en modo
+  restringido (ninguno corre). INSTALAR y ACTIVAR son dos pasos distintos.
+- Ejemplos del profe: Excalidraw (pizarra), Kanban, Importer (oficial: trae notas de
+  Notion, Evernote, Keep) y Claudian (IA, tema de F4).
+- Pareto: un complemento con formato propio es una dependencia; el Markdown plano es
+  lo que sobrevive. El catálogo es contexto.
+- Con teclado: pegar imagen = `i` + `Ctrl+V` (en modo normal `Ctrl+V` es bloque visual) ·
+  `Ctrl+P` + "lienzo" · `Esc` sale de una tarjeta. A verificar en g10.
+- Nota del profe: `![[img]]` es propio de Obsidian (estándar: `![texto](ruta)`);
+  `![[img|300]]` fija el ancho; los complementos se instalan por bóveda y no se pueden
+  limitar por permisos; la ayuda oficial dice que NO se actualizan solos (el video
+  muestra una opción automática: verificar en la 1.15.0).
+- Dudas: chequeo pendiente · Ejercicios del material: ninguno (el PDF de complementos
+  por rol no está en material/: contexto) · PRÁCTICAS CREADAS: g10
+- PRÓXIMO PASO: prácticas g02-g10 y examen del curso; clases 14-16 en F4.
 
 # ============================================================
 # FORMATO DE CADA SESIÓN (referencia para Claude — copiar y llenar)

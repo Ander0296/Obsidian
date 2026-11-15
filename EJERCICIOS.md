@@ -78,6 +78,21 @@ Tipo: guiada
 Arranque: ejercicios/g07-propiedades-y-plantillas.md | Si te trabás: Sesión #08 de GUIA.md
 Notas a leer en la entrega: `g07 café`, `Plantilla cata`, `g07 Huila`, `Plantilla tostador`, `g07 tostador`. Verificar ahí los nombres en español (modo fuente, mover, Plantillas) y `Ctrl+;`.
 
+PRÁCTICA g08 — Nota diaria — [ ] pendiente (autocontenida: se puede hacer ya)
+Tipo: guiada
+Arranque: ejercicios/g08-nota-diaria.md | Si te trabás: Sesión #09 de GUIA.md | Checklist: ToDo/nota-diaria.md
+Notas a leer en la entrega: `Plantilla diaria g08`, la nota diaria (su nombre viene en el campo "Nombre de la nota diaria" de la entrega; carpeta `g08 Diario`), `g08 molino`, `g08 filtro`. Verificar ahí los nombres en español (Notas diarias, archivo predeterminado al abrir), si `/` busca en modo Vim y si recordó solo el atajo de seguir enlace.
+
+PRÁCTICA g09 — Bases — [ ] pendiente (autocontenida: se puede hacer ya)
+Tipo: guiada
+Arranque: ejercicios/g09-bases.md | Si te trabás: Sesión #10 de GUIA.md (propiedades: Sesión #08)
+Notas a leer en la entrega: `g09 Huila`, `g09 Nariño` (tueste debe decir `medio`), `g09 Tolima`, `g09 granos.base`, `g09 claros.base`. Verificar ahí el nombre del comando de crear base, `F2` para renombrar y si la tabla se maneja con teclado.
+
+PRÁCTICA g10 — Adjuntos, incrustar, lienzo y complementos — [ ] pendiente (autocontenida: se puede hacer ya)
+Tipo: guiada
+Arranque: ejercicios/g10-adjuntos-lienzo-y-complementos.md | Si te trabás: Sesión #11 de GUIA.md
+Notas a leer en la entrega: `g10 receta`, `g10 maestra`, `g10 álbum`, `g10 mapa.canvas`. Verificar ahí la carpeta de adjuntos real, `Ctrl+V` en modo inserción, si hay modo Vim dentro de una tarjeta y si existe la opción de actualizar complementos sola (el video la muestra; la ayuda oficial dice que no).
+
 # ============================================================
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)
 # ============================================================

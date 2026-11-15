@@ -36,3 +36,15 @@ s07 — citas, enlaces web, callouts y código:
 s08 — propiedades y plantillas:
 - Las propiedades van entre dos líneas --- al principio: autor: Cervantes, tipo: libro.
 - Una plantilla guarda la estructura; {{title}} y {{date}} se reemplazan al insertarla.
+
+s09 — nota diaria:
+- La nota diaria es la puerta de entrada: nace sola con plantilla y fecha.
+- En el formato de fecha, el texto fijo va entre corchetes: YYYY-MM-DD [diario].
+
+s10 — Bases:
+- Una base no guarda datos: muestra las notas que cumplen el filtro tipo es grano.
+- Cada propiedad es una columna; si el valor cambia en la base, cambia en la nota.
+
+s11 — lienzo, adjuntos y complementos:
+- ![[foto.png]] incrusta la imagen; el archivo real vive en la carpeta de adjuntos.
+- Instalar un complemento no alcanza: también hay que activarlo, y es código de terceros.
