@@ -8,15 +8,18 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: Platzi clases 12-13 completas (lienzo, adjuntos,
-  complementos). TERMINADO el material de F1 (clases 03-13, PDF nivel 01 y pág. 4)
+- Último punto estudiado: TERMINADO el material de F1 (Platzi 03-13). Desde el
+  2026-11-18 (obs-s10) se aprende HACIENDO en la bóveda real Cabletronics.
 - Última tanda: Sesión #11 (2026-11-15, en obs-s09)
-- PRÓXIMA SESIÓN: `/rename obs-s10`
+- PRÓXIMA SESIÓN: `/rename obs-s11`
   (sale SIEMPRE de esta línea, no se calcula: contador distinto al de
   las tandas. Claude la actualiza al cerrar.)
-- Próximo material: ninguno pendiente de F1 (clases 01-02 opcionales; 14-16 van en F4)
-- Prácticas: g02 [~] → g03 → … → g10 (g01 ✅ 2026-11-12, r1 el 11-16). PLAN del usuario (11-15): curso terminado, ahora las prácticas.
-  OJO: g02-g05 usan notas del café que ya no existen (decisión abierta en EJERCICIOS.md); g06-g10 no.
+- Cabletronics: `~/Proyectos/Cabletronics`, Sync Plus E2E; la escribe el usuario, Claude
+  la lee y propone (permiso + candado). Carpeta por sede con índice (`Edificio_EPM`),
+  lo general en la raíz, nombres únicos, claves en 1Password. Sigue: Museo del Agua.
+- obsidian.nvim v3.16.10 (F3 adelantada): `<leader>so` notas + faltantes, `Enter` sigue enlace.
+- Prácticas: g02 [~] … g10 y r1 de g01 vencido (11-16). DECISIÓN ABIERTA: seguir las gNN
+  o reemplazarlas por el trabajo en Cabletronics (preguntar en /arranque).
 - Último triage (`/pendientes`): nunca todavía · Último examen: nunca
 - Entorno: Obsidian 1.15.0 EN ESPAÑOL, nvim 0.12.6 ✅ · markdownlint ❌ (F3) ·
   Cerebro ✅ con Obsidian Sync Plus E2E, sin git (2026-11-12; PC + cel ✅, falta el otro PC)

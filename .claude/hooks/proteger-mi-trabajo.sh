@@ -15,11 +15,11 @@ set -u
 
 # Carpetas donde vive el trabajo del usuario. El /setup agrega acá las que
 # sume el tema (diagramas/, grabaciones/, redacciones/...).
-CARPETAS_PROTEGIDAS='/(ejercicios|Proyectos/Cerebro)/'
+CARPETAS_PROTEGIDAS='/(ejercicios|Proyectos/Cerebro|Proyectos/Cabletronics)/'
 
 # Carpetas donde Claude no puede ni CREAR: la bóveda Cerebro es 100% del
 # usuario y los archivos de arranque viven en ejercicios/ de este repo.
-CARPETAS_SOLO_LECTURA='/Proyectos/Cerebro/'
+CARPETAS_SOLO_LECTURA='/Proyectos/(Cerebro|Cabletronics)/'
 
 entrada=$(cat)
 herramienta=$(printf '%s' "$entrada" | jq -r '.tool_name // empty')
@@ -38,7 +38,7 @@ fi
 motivo="BLOQUEADO por el candado del proyecto: ese archivo es trabajo del usuario.
 Claude solo puede CREAR archivos nuevos en las carpetas de trabajo
 (el archivo de arranque: enunciado + prompt de entrega, sin solución).
-En ~/Proyectos/Cerebro ni eso: la bóveda es 100% del usuario.
+En las bóvedas (~/Proyectos/Cerebro, ~/Proyectos/Cabletronics) ni eso: son 100% del usuario.
 Editar o sobrescribir lo que el usuario ya escribió está prohibido: la
 corrección va AL CHAT y, en 3 líneas como máximo, a EJERCICIOS.md."
 

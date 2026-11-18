@@ -1,8 +1,9 @@
 {
   "permissions": {
-    "additionalDirectories": ["~/Proyectos/Cerebro"],
+    "additionalDirectories": ["~/Proyectos/Cerebro", "~/Proyectos/Cabletronics"],
     "allow": [
-      "Read(~/Proyectos/Cerebro/**)"
+      "Read(~/Proyectos/Cerebro/**)",
+      "Read(~/Proyectos/Cabletronics/**)"
     ]
   },
   "hooks": {
